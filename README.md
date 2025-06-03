@@ -24,3 +24,13 @@ This project is a basic TODO API using Node.js and MongoDB.
 
 - `POST /api/users/register` – register a new user.
 - `POST /api/users/login` – log in and receive a token.
+
+## Frontend
+
+This repository also contains a simple React frontend created with Vite.
+
+### Setup
+
+1. `cd frontend`
+2. `npm install`
+3. `npm run dev` – starts the development server at `http://localhost:3000`.
