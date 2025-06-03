@@ -1,13 +1,13 @@
-# TodoOptica
+# todooptica
 
-This project contains the backend API for TodoOptica.
+This project is a basic TODO API using Node.js and MongoDB.
 
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) and `npm` installed.
 - A running MongoDB instance accessible to the server.
 
-## Installation
+## Environment setup
 
 1. Open a terminal and navigate to the `backend` directory:
 
@@ -21,10 +21,10 @@ This project contains the backend API for TodoOptica.
    npm install
    ```
 
-3. Configure environment variables. Copy the example file and edit it with your values:
+3. Copy the example environment file and edit it with your values:
 
    ```bash
-   cp .env.txt .env
+   cp .env.example .env
    ```
 
    The `.env` file should define at least the following variables:
@@ -37,15 +37,15 @@ This project contains the backend API for TodoOptica.
 
 ## Running the server
 
-Once the dependencies are installed and `.env` is configured, start the API server with:
+While still in the `backend` directory, start the API server with:
 
 ```bash
 npm start
 ```
 
-The server will run on the port specified by the `PORT` variable in your `.env` file (default is 5000).
+The server will run on the port specified by the `PORT` variable in your `.env` file (default is `5000`).
 
 ## Notes
 
 - Ensure MongoDB is running and reachable using the `MONGO_URI` provided.
-- Some development setups use tools like `nodemon` for automatic restarts, but this project runs with `npm start`.
+- You can use tools like `nodemon` for automatic restarts during development, but the default command is `npm start`.
