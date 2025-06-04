@@ -36,9 +36,10 @@ export default function RegisterForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Registro</h2>
+    <form onSubmit={handleSubmit} className="space-y-4">
+      <h2 className="text-xl font-semibold">Registro</h2>
       <input
+        className="w-full border rounded px-3 py-2"
         type="text"
         placeholder="Nombre"
         value={name}
@@ -46,6 +47,7 @@ export default function RegisterForm() {
         required
       />
       <input
+        className="w-full border rounded px-3 py-2"
         type="email"
         placeholder="Correo electrónico"
         value={email}
@@ -53,15 +55,21 @@ export default function RegisterForm() {
         required
       />
       <input
+        className="w-full border rounded px-3 py-2"
         type="password"
         placeholder="Contraseña"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         required
       />
-      <button type="submit">Registrarse</button>
-      {message && <p>{message}</p>}
-      {error && <p className="error">{error}</p>}
+      <button
+        type="submit"
+        className="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700"
+      >
+        Registrarse
+      </button>
+      {message && <p className="text-green-600">{message}</p>}
+      {error && <p className="text-red-500">{error}</p>}
     </form>
   );
 }

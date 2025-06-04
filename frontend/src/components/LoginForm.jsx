@@ -30,9 +30,10 @@ export default function LoginForm({ onLogin }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Iniciar sesión</h2>
+    <form onSubmit={handleSubmit} className="space-y-4">
+      <h2 className="text-xl font-semibold">Iniciar sesión</h2>
       <input
+        className="w-full border rounded px-3 py-2"
         type="email"
         placeholder="Correo electrónico"
         value={email}
@@ -40,14 +41,20 @@ export default function LoginForm({ onLogin }) {
         required
       />
       <input
+        className="w-full border rounded px-3 py-2"
         type="password"
         placeholder="Contraseña"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         required
       />
-      <button type="submit">Entrar</button>
-      {error && <p className="error">{error}</p>}
+      <button
+        type="submit"
+        className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+      >
+        Entrar
+      </button>
+      {error && <p className="text-red-500">{error}</p>}
     </form>
   );
 }
