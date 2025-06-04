@@ -34,3 +34,10 @@ This repository also contains a simple React frontend created with Vite.
 1. `cd frontend`
 2. `npm install`
 3. `npm run dev` – starts the development server at `http://localhost:3000`.
+
+### Styling
+
+This frontend uses **Tailwind CSS** for styling. The configuration files
+(`tailwind.config.cjs` and `postcss.config.cjs`) are already included. Running
+`npm install` will install Tailwind and its PostCSS plugins. The global styles
+are defined in `src/index.css` and `src/App.css` using Tailwind's directives.
