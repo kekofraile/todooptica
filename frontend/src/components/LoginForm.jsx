@@ -23,7 +23,7 @@ export default function LoginForm({ onLogin }) {
         setError(data.error || 'Error al iniciar sesión');
         return;
       }
-      onLogin(email, data.token);
+      onLogin(email, data.token, data.userId);
     } catch (err) {
       setError('Error de red');
     }

@@ -24,6 +24,10 @@ This project is a basic TODO API using Node.js and MongoDB.
 
 - `POST /api/users/register` – register a new user.
 - `POST /api/users/login` – log in and receive a token.
+- `GET /api/todos` – list todos for a user (pass `userId` as query).
+- `POST /api/todos` – create a todo.
+- `PUT /api/todos/:id` – update a todo.
+- `DELETE /api/todos/:id` – delete a todo.
 
 ## Frontend
 
@@ -34,3 +38,7 @@ This repository also contains a simple React frontend created with Vite.
 1. `cd frontend`
 2. `npm install`
 3. `npm run dev` – starts the development server at `http://localhost:3000`.
+
+After logging in you will see a simple todo list where you can add,
+edit and delete tasks. These actions communicate with the backend
+routes described above.
