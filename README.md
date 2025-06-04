@@ -35,6 +35,10 @@ This repository also contains a simple React frontend created with Vite.
 2. `npm install`
 3. `npm run dev` – starts the development server at `http://localhost:3000`.
 
+After logging in you will see a simple todo list where you can add,
+edit and delete tasks. These actions communicate with the backend
+routes described above.
+
 ### Styling
 
 This frontend uses **Tailwind CSS** for styling. The configuration files
