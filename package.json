@@ -1,0 +1,20 @@
+{
+  "name": "todo-optica-web",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -u scripts/dev_server.py",
+    "start": "npm run dev",
+    "test": "npm run check && playwright test",
+    "build:store-rush": "npm --prefix games/lumen-optical-store-rush/app run build",
+    "format": "prettier --write \"**/*.{html,css,js,json,xml,md}\" --ignore-unknown",
+    "generate": "npm run generate:seo",
+    "generate:seo": "python3 scripts/generate-search-index.py && python3 scripts/generate-rss.py && python3 scripts/generate-sitemap.py",
+    "generate:content": "python3 scripts/generate-blog-2026-posts.py && python3 scripts/generate-blog-images.py && npm run generate:seo",
+    "check": "npm run generate:seo && python3 scripts/check-links.py && python3 scripts/validate-public-surface.py && python3 scripts/validate-editorial-surface.py",
+    "publish": "python3 scripts/publish.py"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "prettier": "^3.6.2"
+  }
+}

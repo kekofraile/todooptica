@@ -1,0 +1,15 @@
+dist/
+output/
+.vercel/
+.playwright/
+.vscode/
+playwright-report/
+test-results/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+references/
+legacy_archive/
+drafts/
+progress.md

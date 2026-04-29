@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lumen Optical: Store Rush | Todo Óptica</title>
+    <meta
+      name="description"
+      content="Juega Lumen Optical: Store Rush, un management game top-down ambientado en una óptica moderna."
+    />
+    <meta name="theme-color" content="#0b9c4c" />
+    <meta name="view-transition" content="same-origin" />
+    <meta property="og:title" content="Lumen Optical: Store Rush | Todo Óptica" />
+    <meta
+      property="og:description"
+      content="Gestiona revisiones, monturas, lentillas y upgrades dentro de una boutique óptica moderna."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Todo Óptica" />
+    <meta property="og:image" content="assets/ai-eye.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="canonical"
+      href="https://www.todooptica.es/simulador-optica.html"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">
+          <img
+            class="logo-img"
+            src="assets/logo.svg"
+            alt="Todo Óptica"
+            width="160"
+            height="35"
+          />
+        </a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="sr-only">Abrir menú</span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-nav" class="site-nav">
+          <a href="index.html">Inicio</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="control-miopia.html">Control de miopía</a>
+          <a href="tecnologia.html">Tecnología</a>
+          <a href="audiologia.html">Audiología</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="centros.html">Centros</a>
+          <a class="cta" href="cita.html">Cita previa</a>
+          <a class="active" href="juegos.html">Juegos</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero--simulator">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Simulador 3D</p>
+            <h1>Lumen Optical: Store Rush</h1>
+            <p class="lead">
+              Un management game top-down ambientado en una boutique óptica:
+              camina por la tienda, abre revisiones, remata monturas, cobra y
+              reinvierte para hacer crecer Lumen Optical.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="btn primary"
+                href="games/lumen-optical-store-rush/"
+                data-launch-simulator
+              >
+                >Jugar ahora</a
+              >
+              <a class="btn ghost" href="juegos.html"
+                >Volver al hub</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-media reveal" aria-hidden="true">
+            <div class="media-card media-card--main simulator-poster">
+              <div class="simulator-poster__floor"></div>
+              <div class="simulator-poster__desk"></div>
+              <div class="simulator-poster__exam-room"></div>
+              <div class="simulator-poster__people"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section simulator-launcher">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Estado del entorno</p>
+            <h2>Launcher local del simulador</h2>
+            <p>
+              Esta página detecta si el proyecto Unity está presente en el
+              workspace y te da acceso directo a sus archivos base.
+            </p>
+          </div>
+
+          <div class="simulator-grid">
+            <article class="simulator-panel reveal">
+              <span class="simulator-panel__eyebrow">Juego playable</span>
+              <h3>Campaign + endless mode</h3>
+              <p id="simulator-status" class="simulator-status">
+                Verificando compilación publicada...
+              </p>
+              <ul class="simulator-list">
+                <li>Ruta pública: <code>/games/lumen-optical-store-rush/</code></li>
+                <li>Stack: Phaser 3 + TypeScript + Vite</li>
+                <li>Campaña: 18 jornadas + endless mode</li>
+              </ul>
+              <div class="game-card__actions">
+                <a
+                  class="btn primary small"
+                  href="games/lumen-optical-store-rush/"
+                  data-launch-simulator
+                >
+                  Jugar campaña</a
+                >
+                <a class="btn ghost small" href="juegos.html"
+                  >Más juegos</a
+                >
+              </div>
+            </article>
+
+            <article class="simulator-panel reveal">
+              <span class="simulator-panel__eyebrow">Qué incluye</span>
+              <h3>Cómo se juega</h3>
+              <ol class="simulator-steps">
+                <li>Muévete con <code>WASD</code> o flechas y usa <code>E</code> o <code>Espacio</code> para interactuar.</li>
+                <li>Atiende el triaje en recepción y dirige a cada cliente a su estación.</li>
+                <li>Lanza revisiones y entrenamientos como tareas de fondo y vuelve a rematarlas luego.</li>
+                <li>Cierra cobros en caja, protege la satisfacción y compra upgrades entre jornadas.</li>
+                <li>Supera el Día 18 para desbloquear el endless con modificadores rotatorios.</li>
+              </ol>
+              <div class="game-card__actions">
+                <a class="btn primary small" href="games/lumen-optical-store-rush/"
+                  >Entrar en la tienda</a
+                >
+                <a class="btn ghost small" href="juegos.html">Volver a juegos</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <img
+            class="footer-logo"
+            src="assets/logo.svg"
+            alt="Todo Óptica"
+            width="180"
+            height="39"
+            loading="lazy"
+          />
+          <p>Óptica y audiología con tres centros en Valladolid y Madrid.</p>
+          <div class="footer-social">
+            <a
+              href="https://es-es.facebook.com/TodoOpticaLabradores/"
+              target="_blank"
+              rel="noreferrer"
+              >Facebook</a
+            >
+            <a
+              href="https://www.instagram.com/todooptica.va/"
+              target="_blank"
+              rel="noreferrer"
+              >Instagram</a
+            >
+          </div>
+        </div>
+
+        <div>
+          <h4>Explora</h4>
+          <a href="servicios.html">Servicios</a>
+          <a href="tecnologia.html">Tecnología</a>
+          <a href="juegos.html">Juegos</a>
+          <a href="blog.html">Blog</a>
+        </div>
+
+        <div>
+          <h4>Centros</h4>
+          <a href="centro-labradores.html">Valladolid Labradores</a>
+          <a href="centro-paseo-zorrilla.html">Valladolid Zorrilla</a>
+          <a href="centro-donostiarra.html">Madrid Donostiarra</a>
+        </div>
+
+        <div>
+          <h4>Legal</h4>
+          <a href="privacidad.html">Privacidad</a>
+          <a href="cookies.html">Cookies</a>
+          <a href="aviso-legal.html">Aviso legal</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="script-ui.js"></script>
+    <script src="script-simulator-launcher.js"></script>
+  </body>
+</html>
