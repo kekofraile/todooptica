@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prisma Rush | Todo Óptica</title>
+    <meta
+      name="description"
+      content="Prisma Rush: un juego rápido para recoger prismas y esquivar peligros."
+    />
+    <meta property="og:title" content="Prisma Rush | Todo Óptica" />
+    <meta
+      property="og:description"
+      content="Prisma Rush: un juego rápido para recoger prismas y esquivar peligros."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Todo Óptica" />
+    <meta property="og:image" content="assets/favicon.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://www.todooptica.es/game.html" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body class="game-body">
+    <main class="game-shell" id="game-root">
+      <div class="game-stage" id="game-stage">
+        <canvas
+          id="game"
+          width="900"
+          height="600"
+          role="img"
+          aria-label="Juego Prisma Rush"
+          tabindex="0"
+        ></canvas>
+
+        <div class="game-hud" aria-label="Estado de Prisma Rush">
+          <div class="hud-card hud-score" aria-live="polite">
+            <span class="hud-kicker">Puntuación</span>
+            <strong id="ui-score">0</strong>
+            <span id="ui-level">Nivel 1</span>
+          </div>
+
+          <div class="hud-card hud-progress">
+            <span class="hud-kicker">Prismas</span>
+            <strong id="ui-remaining">4</strong>
+            <span>pendientes</span>
+          </div>
+
+          <div class="hud-card hud-health" aria-label="Vidas restantes">
+            <span class="hud-kicker">Vidas</span>
+            <div class="health-pips" id="ui-health" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="game-status" id="ui-status" role="status">
+          Recoge los prismas verdes.
+        </div>
+
+        <section class="game-screen is-visible" id="ui-screen" aria-live="polite">
+          <div class="screen-panel">
+            <p class="screen-kicker" id="ui-screen-kicker">Todo Óptica presenta</p>
+            <h1 id="ui-screen-title">Prisma Rush</h1>
+            <p id="ui-screen-copy">
+              Captura los prismas verdes, esquiva los fragmentos rojos y aguanta
+              cada nivel sin perder las tres vidas.
+            </p>
+            <div class="control-grid" aria-label="Controles">
+              <span>WASD</span>
+              <span>Flechas</span>
+              <span>Espacio</span>
+              <span>F</span>
+            </div>
+            <div class="screen-actions">
+              <button type="button" class="primary-action" id="ui-primary-action">
+                Jugar
+              </button>
+              <button type="button" class="ghost-action" id="ui-fullscreen-action">
+                Pantalla completa
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

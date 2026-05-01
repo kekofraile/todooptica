@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Control de Miopía | Todo Óptica</title>
+    <meta
+      name="description"
+      content="Especialistas en control de miopía infantil y juvenil en Valladolid y Madrid. Primera consulta gratuita, seguimiento personalizado y soluciones como Stellest, MiYOSMART, MiSight y Orto-K."
+    />
+    <meta name="theme-color" content="#13724f" />
+    <meta name="view-transition" content="same-origin" />
+    <meta property="og:title" content="Control de Miopía | Todo Óptica" />
+    <meta
+      property="og:description"
+      content="Frena la progresión de la miopía infantil con un plan clínico, opciones contrastadas y seguimiento real."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Todo Óptica" />
+    <meta property="og:image" content="assets/img-myopia.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="canonical"
+      href="https://www.todooptica.es/control-miopia.html"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Control de Miopía - Todo Óptica",
+        "url": "https://www.todooptica.es/control-miopia.html",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Todo Óptica",
+          "url": "https://www.todooptica.es/"
+        }
+      }
+    </script>
+  </head>
+  <body class="editorial-page editorial-myopia" data-service="Miopía infantil">
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">
+          <img
+            class="logo-img"
+            src="assets/logo.svg"
+            alt="Todo Óptica"
+            width="160"
+            height="35"
+          />
+        </a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="sr-only">Abrir menú</span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-nav" class="site-nav">
+          <a href="index.html">Inicio</a>
+          <a href="servicios.html">Servicios</a>
+          <a class="active" href="control-miopia.html">Control de miopía</a>
+          <a href="tecnologia.html">Tecnología</a>
+          <a href="audiologia.html">Audiología</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="centros.html">Centros</a>
+          <a class="cta" href="cita.html">Cita previa</a>
+          <a href="juegos.html">Juegos</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero--editorial">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="hero-brandline">Todo Óptica</p>
+            <p class="eyebrow">Control de miopía</p>
+            <h1>Un plan clínico para frenar la progresión mientras crecen.</h1>
+            <p class="lead">
+              La miopía infantil progresa rápido. Por eso trabajamos con
+              opciones contrastadas y seguimiento real para que la familia
+              entienda cada decisión.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="cita.html?service=Miopía%20infantil"
+                >Primera consulta gratuita</a
+              >
+              <a class="btn ghost" href="servicios.html">Ver servicios</a>
+            </div>
+            <div class="hero-facts" aria-label="Ventajas">
+              <span>Seguimiento semestral</span>
+              <span>Lentes y lentillas específicas</span>
+              <span>Plan claro para familias</span>
+            </div>
+          </div>
+
+          <div class="hero-media reveal" aria-hidden="true">
+            <div class="media-card media-card--main">
+              <img
+                src="assets/img-myopia.webp"
+                srcset="
+                  assets/img-myopia-640w.webp 640w,
+                  assets/img-myopia.webp      600w
+                "
+                sizes="(max-width: 900px) 90vw, 520px"
+                alt=""
+                width="600"
+                height="600"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="simulador">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Visualiza</p>
+            <h2>Simulador de miopía (aproximado)</h2>
+            <p>
+              Una forma rápida de entender por qué la miopía sin corrección
+              puede afectar al aprendizaje y a la seguridad. Es orientativo: la
+              sensación real varía en cada persona.
+            </p>
+          </div>
+
+          <div class="simulator reveal" data-myopia-sim>
+            <div class="simulator-stage" aria-label="Simulación de visión">
+              <img
+                src="assets/img-myopia.webp"
+                alt="Escena simulada para entender la visión borrosa"
+                width="991"
+                height="555"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="simulator-controls">
+              <label class="simulator-label">
+                <span>Nivel de miopía (aprox.)</span>
+                <input
+                  type="range"
+                  min="0"
+                  max="6"
+                  step="0.25"
+                  value="2"
+                  data-myopia-range
+                />
+              </label>
+              <div class="simulator-readout">
+                <span>Miopía simulada</span>
+                <strong data-myopia-value>-2.00 D</strong>
+              </div>
+              <button
+                type="button"
+                class="btn ghost small"
+                data-myopia-toggle
+                aria-pressed="false"
+              >
+                Ver con corrección
+              </button>
+              <p class="simulator-note">
+                Simulación educativa. Si tienes dudas o notas cambios, lo vemos
+                en consulta.
+              </p>
+            </div>
+          </div>
+
+          <div class="myopia-predictor reveal" data-myopia-predictor>
+            <div class="predictor-head">
+              <h3>Predictor de progresión (orientativo)</h3>
+              <p>
+                Introduce la edad del niño/a y usamos la miopía actual del
+                simulador para comparar cómo evoluciona con y sin control.
+              </p>
+            </div>
+
+            <div class="predictor-grid">
+              <div class="predictor-controls">
+                <label class="simulator-label">
+                  <span>Edad del niño/a</span>
+                  <input
+                    type="range"
+                    min="6"
+                    max="16"
+                    step="1"
+                    value="9"
+                    data-predictor-age
+                  />
+                </label>
+                <div class="simulator-readout predictor-readout">
+                  <span>Edad seleccionada</span>
+                  <strong data-predictor-age-value>9 años</strong>
+                </div>
+                <div class="simulator-readout predictor-readout">
+                  <span>Miopía actual (del simulador)</span>
+                  <strong data-predictor-myopia>-2.00 D</strong>
+                </div>
+                <div class="predictor-legend" aria-label="Leyenda">
+                  <div class="legend-item">
+                    <span class="legend-swatch legend-swatch--no"></span>
+                    <span>Sin control</span>
+                  </div>
+                  <div class="legend-item">
+                    <span class="legend-swatch legend-swatch--yes"></span>
+                    <span>Con control (≈50% menos progresión)</span>
+                  </div>
+                </div>
+                <p class="predictor-note">
+                  Proyección anual hasta los 18 años con una progresión media
+                  que se modula por edad y miopía de partida.
+                </p>
+              </div>
+
+              <div class="predictor-chart-wrap">
+                <svg
+                  class="predictor-chart"
+                  viewBox="0 0 640 300"
+                  role="img"
+                  aria-label="Gráfica de progresión de miopía con y sin control"
+                  data-predictor-chart
+                >
+                  <g data-predictor-grid></g>
+                  <g data-predictor-lines>
+                    <polyline
+                      class="predictor-line predictor-line--no"
+                      data-predictor-line-no-control
+                      points=""
+                    ></polyline>
+                    <polyline
+                      class="predictor-line predictor-line--yes"
+                      data-predictor-line-control
+                      points=""
+                    ></polyline>
+                    <circle
+                      class="predictor-point predictor-point--no"
+                      data-predictor-point-no
+                      cx="0"
+                      cy="0"
+                      r="4"
+                    ></circle>
+                    <circle
+                      class="predictor-point predictor-point--yes"
+                      data-predictor-point-yes
+                      cx="0"
+                      cy="0"
+                      r="4"
+                    ></circle>
+                  </g>
+                </svg>
+                <p class="predictor-summary" data-predictor-summary>—</p>
+              </div>
+            </div>
+
+            <p class="predictor-disclaimer">
+              Estimación educativa basada en cohortes pediátricas publicadas y
+              en una reducción orientativa del 50% con control. No sustituye una
+              revisión clínica individual.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section scrolly" id="plan-miopia">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Plan clínico</p>
+            <h2>Un plan para familias: claro, medible y con seguimiento</h2>
+            <p>
+              El objetivo no es “poner algo” y cruzar los dedos. Es escoger la
+              estrategia que encaje con el niño y revisarla con criterio a lo
+              largo del curso.
+            </p>
+          </div>
+
+          <div class="scrolly-wrap" data-scrolly>
+            <div class="scrolly-sticky reveal">
+              <div class="scrolly-frame" aria-hidden="true">
+                <img
+                  src="assets/img-myopia.webp"
+                  alt=""
+                  width="600"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="scrolly-meter" aria-hidden="true">
+                  <span></span>
+                </div>
+              </div>
+              <p class="scrolly-caption" data-scrolly-caption>
+                Primer paso: entender hábitos, distancia de trabajo y señales
+                que os preocupan en casa o en el cole.
+              </p>
+            </div>
+
+            <div class="scrolly-steps">
+              <article
+                class="scrolly-step reveal"
+                data-scrolly-step
+                data-image="assets/img-myopia.webp"
+                data-caption="Primer paso: entender hábitos, distancia de trabajo y señales que os preocupan en casa o en el cole."
+              >
+                <p class="scrolly-kicker">Paso 1</p>
+                <h3>Detectar señales (y poner contexto)</h3>
+                <p>
+                  Entrecierra los ojos, se acerca al libro, se queja de dolor de
+                  cabeza, baja el rendimiento o evita actividades de lejos. Aquí
+                  recogemos todo.
+                </p>
+                <ul>
+                  <li>Rutina: pantallas, lectura, deporte, exterior</li>
+                  <li>Antecedentes familiares</li>
+                  <li>Qué ha cambiado en los últimos meses</li>
+                </ul>
+              </article>
+
+              <article
+                class="scrolly-step reveal"
+                data-scrolly-step
+                data-image="assets/img-tech.webp"
+                data-caption="Medimos y dejamos una línea base: refracción, visión binocular y pruebas según el caso."
+              >
+                <p class="scrolly-kicker">Paso 2</p>
+                <h3>Medir y crear una línea base</h3>
+                <p>
+                  En consulta buscamos datos sólidos para decidir con calma.
+                  Según el caso, complementamos con pruebas específicas.
+                </p>
+                <ul>
+                  <li>Valoración optométrica y refracción</li>
+                  <li>Enfoque y binocularidad</li>
+                  <li>Recomendación de revisiones programadas</li>
+                </ul>
+              </article>
+
+              <article
+                class="scrolly-step reveal"
+                data-scrolly-step
+                data-image="assets/img-eyewear.webp"
+                data-caption="Elegimos la opción que mejor encaja: gafas, lentillas o una combinación, según edad y estilo de vida."
+              >
+                <p class="scrolly-kicker">Paso 3</p>
+                <h3>Elegir estrategia (sin complicar)</h3>
+                <p>
+                  No todas las opciones sirven para todos los niños. Priorizamos
+                  seguridad, adherencia y confort para que el plan sea realista.
+                </p>
+                <ul>
+                  <li>Opciones en gafas (miopía infantil)</li>
+                  <li>Opciones en lentillas (si encaja)</li>
+                  <li>Recomendación de hábitos de apoyo</li>
+                </ul>
+              </article>
+
+              <article
+                class="scrolly-step reveal"
+                data-scrolly-step
+                data-image="assets/img-contacto.webp"
+                data-caption="Arranque y adaptación: ajustes, dudas y una guía para que la familia tenga control."
+              >
+                <p class="scrolly-kicker">Paso 4</p>
+                <h3>Arranque y adaptación</h3>
+                <p>
+                  Los primeros días son clave. Ajustamos montura si es en gafas
+                  y, si es en lentillas, enseñamos higiene y manejo paso a paso.
+                </p>
+                <ul>
+                  <li>Ajuste fino y recomendaciones de uso</li>
+                  <li>Guía de mantenimiento</li>
+                  <li>Resolución de dudas sin prisas</li>
+                </ul>
+              </article>
+
+              <article
+                class="scrolly-step reveal"
+                data-scrolly-step
+                data-image="assets/img-eye.webp"
+                data-caption="Seguimiento: revisamos evolución y ajustamos el plan si cambia la rutina o aparecen nuevas necesidades."
+              >
+                <p class="scrolly-kicker">Paso 5</p>
+                <h3>Seguimiento y ajustes</h3>
+                <p>
+                  Revisamos la evolución y cambiamos lo necesario. El objetivo
+                  es tener control y tranquilidad durante todo el año.
+                </p>
+                <ul>
+                  <li>Revisiones según el caso</li>
+                  <li>Optimización de hábitos</li>
+                  <li>Plan claro para el siguiente trimestre</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="container split-grid">
+          <div class="split-copy reveal">
+            <p class="eyebrow">Cómo trabajamos</p>
+            <h2>Qué valoramos en consulta (y por qué)</h2>
+            <p>
+              Cada niño es un mundo. En la primera visita nos centramos en
+              entender el caso y en explicar el “por qué” de cada decisión, sin
+              tecnicismos innecesarios.
+            </p>
+            <ul class="checklist">
+              <li>Graduación y visión funcional (más allá de “ver letras”)</li>
+              <li>Hábitos: pantallas, lectura, exterior y ergonomía</li>
+              <li>Señales de fatiga visual y confort ocular</li>
+            </ul>
+            <a class="btn primary" href="cita.html">Quiero asesoramiento</a>
+          </div>
+
+          <div class="split-panel reveal">
+            <h3>Lo que puedes hacer en casa</h3>
+            <p>
+              El control de miopía también se apoya en hábitos. Te dejamos una
+              guía práctica para familias, sin obsesión y sin culpas.
+            </p>
+            <ul class="checklist">
+              <li>Descansos visuales y buena iluminación al estudiar</li>
+              <li>Distancia cómoda a libro y pantalla</li>
+              <li>Actividades al aire libre siempre que sea posible</li>
+              <li>Revisión si hay cambios o molestias persistentes</li>
+            </ul>
+            <p style="margin-top: 14px">
+              <a class="btn ghost small" href="tecnologia.html"
+                >Ver tecnología</a
+              >
+              <a
+                class="btn ghost small"
+                href="cita.html"
+                style="margin-left: 8px"
+                >Reservar cita</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="tecnologia-miopia">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Tecnología</p>
+            <h2>Medimos para decidir (y para revisar)</h2>
+            <p>
+              En control de miopía, el seguimiento se apoya en datos: nos ayuda
+              a ajustar la estrategia con criterio y a explicaros cada paso.
+            </p>
+          </div>
+
+          <div class="rail-wrap reveal" data-rail>
+            <div
+              class="rail"
+              tabindex="0"
+              aria-label="Tecnología para control de miopía"
+            >
+              <a class="rail-card" href="tecnologia.html#topografia">
+                <img
+                  src="assets/img-eye.webp"
+                  alt=""
+                  width="991"
+                  height="555"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="rail-body">
+                  <span class="rail-tag">Topografía</span>
+                  <h3>Mapa corneal</h3>
+                  <p>Clave en Orto-K y en adaptaciones especiales.</p>
+                </div>
+              </a>
+
+              <a class="rail-card" href="tecnologia.html#visionr-700">
+                <img
+                  src="assets/img-tech.webp"
+                  alt=""
+                  width="768"
+                  height="768"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="rail-body">
+                  <span class="rail-tag">Refracción</span>
+                  <h3>Vision-R 700</h3>
+                  <p>Medidas consistentes para crear una base fiable.</p>
+                </div>
+              </a>
+
+              <a class="rail-card" href="tecnologia.html#retinografia">
+                <img
+                  src="assets/img-retina.webp"
+                  alt=""
+                  width="768"
+                  height="768"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="rail-body">
+                  <span class="rail-tag">Control</span>
+                  <h3>Retinografía + presión</h3>
+                  <p>Chequeos y documentación según el caso.</p>
+                </div>
+              </a>
+
+              <a class="rail-card" href="tecnologia.html#visioffice">
+                <img
+                  src="assets/img-eyewear.webp"
+                  alt=""
+                  width="1024"
+                  height="768"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="rail-body">
+                  <span class="rail-tag">3D</span>
+                  <h3>VisiOffice X</h3>
+                  <p>
+                    Medición 3D para centrado y ajuste milimétrico en gafas.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <p class="rail-note">
+              Tip: usa la rueda del ratón o arrastra en móvil para desplazarte.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="opciones">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Opciones</p>
+            <h2>Comparador rápido (con detalle cuando lo necesitas)</h2>
+            <p>
+              Estas son las opciones más habituales en control de miopía.
+              Seleccionamos la más adecuada según edad, estilo de vida y
+              exploración.
+            </p>
+            <p>
+              Cada plan es único: combinamos mediciones, hábitos y objetivos
+              para escoger la estrategia que mejor encaje con cada paciente.
+            </p>
+            <div class="inline-tags" aria-label="Marcas de control de miopía">
+              <span>Stellest</span>
+              <span>MiYOSMART</span>
+              <span>Superkid Miofocal</span>
+              <span>MiSight</span>
+              <span>Orto-K</span>
+            </div>
+          </div>
+
+          <div class="tabs reveal" data-tabs>
+            <div class="tab-list" data-tab-list>
+              <button type="button" class="tab-btn" data-tab="gafas">
+                Gafas
+              </button>
+              <button type="button" class="tab-btn" data-tab="misight">
+                MiSight
+              </button>
+              <button type="button" class="tab-btn" data-tab="ortok">
+                Orto-K
+              </button>
+              <button type="button" class="tab-btn" data-tab="habitos">
+                Hábitos
+              </button>
+            </div>
+
+            <div class="tab-panels">
+              <div class="tab-panel" data-tab-panel="gafas">
+                <h3>Opciones en gafas (miopía infantil)</h3>
+                <p>
+                  En muchos casos, las gafas son la puerta de entrada más
+                  sencilla: cómodas, fáciles de mantener y compatibles con la
+                  rutina escolar.
+                </p>
+                <ul>
+                  <li>
+                    Ideales si el niño no quiere lentillas (o aún no toca)
+                  </li>
+                  <li>Compatibles con deporte (con montura adecuada)</li>
+                  <li>Requieren ajuste de montura y revisiones programadas</li>
+                </ul>
+                <p>
+                  <a class="btn ghost small" href="cita.html"
+                    >Valorar mi caso</a
+                  >
+                </p>
+              </div>
+
+              <div class="tab-panel" data-tab-panel="misight">
+                <h3>MiSight (lentillas diarias)</h3>
+                <p>
+                  Opción para niños y jóvenes que quieren libertad visual y
+                  manejan bien higiene y rutina. Siempre con adaptación
+                  profesional y seguimiento.
+                </p>
+                <ul>
+                  <li>Uso diario y recambio sencillo</li>
+                  <li>Entrenamiento y control de manejo en consulta</li>
+                  <li>Recomendable cuando el niño está motivado</li>
+                </ul>
+                <p>
+                  <a class="btn ghost small" href="cita.html"
+                    >Quiero que lo valoreis</a
+                  >
+                </p>
+              </div>
+
+              <div class="tab-panel" data-tab-panel="ortok">
+                <h3>Orto-K (lentes nocturnas)</h3>
+                <p>
+                  Se usan mientras se duerme. Por el día, el niño ve sin gafas
+                  ni lentillas. Requiere controles y buena adherencia de la
+                  familia.
+                </p>
+                <ul>
+                  <li>Libertad visual durante el día</li>
+                  <li>Requiere higiene y seguimiento</li>
+                  <li>No es para todos: hay que medir y decidir</li>
+                </ul>
+                <p>
+                  <a class="btn ghost small" href="cita.html"
+                    >Pedir valoración</a
+                  >
+                </p>
+              </div>
+
+              <div class="tab-panel" data-tab-panel="habitos">
+                <h3>Hábitos (el “extra” que marca la diferencia)</h3>
+                <p>
+                  Los hábitos no sustituyen una estrategia óptica cuando hay
+                  progresión, pero ayudan a crear un entorno visual más sano.
+                </p>
+                <ul>
+                  <li>Iluminación y postura al estudiar</li>
+                  <li>Descansos visuales regulares</li>
+                  <li>Tiempo de exterior siempre que sea posible</li>
+                  <li>Distancia cómoda a pantallas</li>
+                </ul>
+                <p>
+                  <a class="btn ghost small" href="cita.html"
+                    >Quiero un plan familiar</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq-miopia">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Preguntas frecuentes</p>
+            <h2>Control de miopía: dudas típicas</h2>
+          </div>
+
+          <div class="faq-grid reveal">
+            <details>
+              <summary>¿Cuándo conviene empezar el control de miopía?</summary>
+              <p>
+                Cuando hay progresión o riesgo (antecedentes familiares, aumento
+                rápido de graduación o hábitos de muchas pantallas y poco
+                exterior). Cuanto antes, mejor.
+              </p>
+            </details>
+            <details>
+              <summary>¿Orto-K es para todo el mundo?</summary>
+              <p>
+                No. Hay que valorar parámetros oculares y hábitos. En consulta
+                te diremos si es una buena opción.
+              </p>
+            </details>
+            <details>
+              <summary>¿Las lentillas MiSight son seguras para niños?</summary>
+              <p>
+                Con buena higiene, una adaptación profesional y seguimiento,
+                pueden ser una opción adecuada.
+              </p>
+            </details>
+            <details>
+              <summary>¿Cada cuánto hay que revisar?</summary>
+              <p>
+                Depende del caso. Lo habitual es un seguimiento periódico para
+                comprobar evolución y ajustar si es necesario.
+              </p>
+            </details>
+          </div>
+
+          <div class="section-heading reveal" style="margin-top: 38px">
+            <h2>¿Quieres un plan para tu hijo?</h2>
+            <p>
+              Te explicamos opciones, tiempos y qué esperar de cada alternativa.
+            </p>
+            <a class="btn primary" href="cita.html?service=Miopía%20infantil"
+              >Pedir cita</a
+            >
+          </div>
+
+          <div class="cta-grid reveal">
+            <article class="cta-card">
+              <h3>Paseo de Zorrilla</h3>
+              <p>Paseo de Zorrilla 62 · Valladolid</p>
+              <div class="cta-actions">
+                <a class="btn primary small" href="tel:+34983226200"
+                  >Llamar ahora</a
+                >
+                <a
+                  class="btn ghost small"
+                  href="https://wa.me/34601045111?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20control%20de%20miop%C3%ADa%20infantil%20en%20Paseo%20de%20Zorrilla."
+                  >WhatsApp</a
+                >
+              </div>
+            </article>
+            <article class="cta-card">
+              <h3>Labradores</h3>
+              <p>C/ Labradores 22 · Valladolid</p>
+              <div class="cta-actions">
+                <a class="btn primary small" href="tel:+34983397231"
+                  >Llamar ahora</a
+                >
+                <a
+                  class="btn ghost small"
+                  href="https://wa.me/34601045111?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20control%20de%20miop%C3%ADa%20infantil%20en%20Labradores."
+                  >WhatsApp</a
+                >
+              </div>
+            </article>
+            <article class="cta-card">
+              <h3>Donostiarra</h3>
+              <p>Avda. Donostiarra 24 · Madrid</p>
+              <div class="cta-actions">
+                <a class="btn primary small" href="tel:+34914031795"
+                  >Llamar ahora</a
+                >
+                <a
+                  class="btn ghost small"
+                  href="https://wa.me/34601045111?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20control%20de%20miop%C3%ADa%20infantil%20en%20Donostiarra%20%28Madrid%29."
+                  >WhatsApp</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <img
+            class="footer-logo"
+            src="assets/logo.svg"
+            alt="Todo Óptica"
+            width="180"
+            height="39"
+            loading="lazy"
+          />
+          <p>Óptica y audiología con tres centros en Valladolid y Madrid.</p>
+          <div class="footer-social">
+            <a
+              href="https://es-es.facebook.com/TodoOpticaLabradores/"
+              target="_blank"
+              rel="noreferrer"
+              >Facebook</a
+            >
+            <a
+              href="https://www.instagram.com/todooptica.va/"
+              target="_blank"
+              rel="noreferrer"
+              >Instagram</a
+            >
+          </div>
+        </div>
+        <div>
+          <h4>Enlaces</h4>
+          <p><a href="servicios.html">Servicios</a></p>
+          <p><a href="catalogo.html">Catálogo</a></p>
+          <p><a href="centros.html">Centros</a></p>
+          <p><a href="cita.html">Cita previa</a></p>
+          <p><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></p>
+          <p><a href="blog.html">Blog</a></p>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <p><a href="aviso-legal.html">Aviso legal</a></p>
+          <p><a href="privacidad.html">Política de privacidad</a></p>
+          <p><a href="cookies.html">Política de cookies</a></p>
+          <p>TODO ÓPTICA, S.L. · CIF B47245063</p>
+          <p>Domicilio: Paseo de Zorrilla 62, 47006 Valladolid</p>
+          <p>Email legal: todooptica.zo@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Todo Óptica. Todos los derechos reservados.</p>
+        <p><a href="cita.html">Pedir cita</a></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
