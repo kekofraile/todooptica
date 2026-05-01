@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cita Previa | Todo Óptica</title>
+  <meta name="description"
+    content="Reserva tu cita en Todo Óptica (Valladolid y Madrid). Confirmamos por teléfono. Formulario rápido y contacto directo por centro." />
+  <meta name="theme-color" content="#0b9c4c" />
+  <meta name="view-transition" content="same-origin" />
+  <meta property="og:title" content="Cita Previa | Todo Óptica" />
+  <meta property="og:description" content="Reserva tu cita en menos de un minuto. Confirmamos por teléfono." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Todo Óptica" />
+  <meta property="og:image" content="assets/ai-hero-eyeglasses.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://www.todooptica.es/cita.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="fonts.css" />
+  <link rel="stylesheet" href="vendor/flatpickr/flatpickr.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Cita Previa - Todo Óptica",
+        "url": "https://www.todooptica.es/cita.html",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Todo Óptica",
+          "url": "https://www.todooptica.es/"
+        }
+      }
+    </script>
+</head>
+
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <img class="logo-img" src="assets/logo.svg" alt="Todo Óptica" width="160" height="35" />
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Abrir menú</span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="control-miopia.html">Control de miopía</a>
+        <a href="tecnologia.html">Tecnología</a>
+        <a href="audiologia.html">Audiología</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="centros.html">Centros</a>
+        <a class="cta active" href="cita.html">Cita previa</a>
+        <a href="juegos.html">Juegos</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section appointment-section" id="formulario">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">WhatsApp</p>
+          <h1>Prepara tu cita en 4 pasos y envíala por WhatsApp</h1>
+          <p>
+            Elige centro, motivo y franja. Al final abrimos una plantilla con
+            tu solicitud para que la envíes por WhatsApp.
+          </p>
+        </div>
+
+        <div class="appointment-layout reveal" data-appointment-wizard>
+          <form
+            class="appointment-form immersive-wizard"
+            id="appointment-form"
+            aria-describedby="form-status"
+          >
+            <!-- Progress Indicator -->
+            <div class="wizard-header">
+              <div class="wizard-progress-track">
+                <div class="wizard-progress-fill" data-wizard-progress></div>
+              </div>
+              <div class="wizard-steps-indicator" data-wizard-indicators>
+                <!-- Injected via JS -->
+              </div>
+            </div>
+
+            <div class="wizard-slides-container">
+              <!-- STEP 1: CENTER -->
+              <div class="wizard-slide active" data-slide="0">
+                <div class="slide-header">
+                  <h2>Elige tu centro</h2>
+                  <p>
+                    Selecciona la óptica más cercana para ver disponibilidad.
+                  </p>
+                </div>
+
+                <div class="center-picker-immersive" data-center-picker>
+                  <label class="center-option">
+                    <input type="radio" name="location" value="paseo" required />
+                    <div class="center-option-card">
+                      <div class="center-img">
+                        <img src="assets/map-paseo.png" alt="Mapa de Paseo de Zorrilla" onerror="this.style.display = 'none'" />
+                      </div>
+                      <div class="center-info">
+                        <span class="center-city">Valladolid</span>
+                        <h3>Paseo de Zorrilla</h3>
+                        <p>Paseo de Zorrilla 62</p>
+                      </div>
+                    </div>
+                  </label>
+
+                  <label class="center-option">
+                    <input type="radio" name="location" value="labradores" required />
+                    <div class="center-option-card">
+                      <div class="center-img">
+                        <img src="assets/map-labradores.png" alt="Mapa de Labradores" onerror="this.style.display = 'none'" />
+                      </div>
+                      <div class="center-info">
+                        <span class="center-city">Valladolid</span>
+                        <h3>Labradores</h3>
+                        <p>C/ Labradores 22</p>
+                      </div>
+                    </div>
+                  </label>
+
+                  <label class="center-option">
+                    <input type="radio" name="location" value="madrid" required />
+                    <div class="center-option-card">
+                      <div class="center-img">
+                        <img src="assets/map-madrid.png" alt="Mapa de Donostiarra (Madrid)" onerror="this.style.display = 'none'" />
+                      </div>
+                      <div class="center-info">
+                        <span class="center-city">Madrid</span>
+                        <h3>Donostiarra</h3>
+                        <p>Avda. Donostiarra 24</p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- STEP 2: SERVICE -->
+              <div class="wizard-slide" data-slide="1">
+                <div class="slide-nav">
+                  <button type="button" class="btn-back" data-wizard-prev>
+                    ← Volver
+                  </button>
+                </div>
+                <div class="slide-header">
+                  <h2>¿Qué necesitas?</h2>
+                  <p>Elige el motivo de tu visita.</p>
+                </div>
+
+                <div class="service-grid-immersive">
+                  <label class="service-option">
+                    <input type="radio" name="service" value="Revisión visual" required />
+                    <div class="service-card-content">
+                      <span class="service-icon">Vista</span>
+                      <span>Revisión visual</span>
+                    </div>
+                  </label>
+                  <label class="service-option">
+                    <input type="radio" name="service" value="Gafas y lentes" required />
+                    <div class="service-card-content">
+                      <span class="service-icon">Gafas</span>
+                      <span>Gafas y lentes</span>
+                    </div>
+                  </label>
+                  <label class="service-option">
+                    <input type="radio" name="service" value="Lentillas" required />
+                    <div class="service-card-content">
+                      <span class="service-icon">Lentes</span>
+                      <span>Lentillas</span>
+                    </div>
+                  </label>
+                  <label class="service-option">
+                    <input type="radio" name="service" value="Audiología" required />
+                    <div class="service-card-content">
+                      <span class="service-icon">Audio</span>
+                      <span>Audiología</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- STEP 3: DATE & TIME -->
+              <div class="wizard-slide" data-slide="2">
+                <div class="slide-nav">
+                  <button type="button" class="btn-back" data-wizard-prev>
+                    ← Volver
+                  </button>
+                </div>
+                <div class="slide-header">
+                  <h2>Fecha y hora</h2>
+                  <p>Dinos tu preferencia y te confirmamos.</p>
+                  <p class="schedule-note" data-schedule-note>
+                    Selecciona centro y fecha para ver horarios disponibles.
+                  </p>
+                </div>
+
+                <div class="datetime-layout">
+                  <label class="input-group">
+                    <span>Fecha deseada</span>
+                    <input type="date" name="date" required class="input-lg" />
+                  </label>
+                  <label class="input-group">
+                    <span>Hora</span>
+                    <select name="time" required class="input-lg" data-time-select>
+                      <option value="">Selecciona fecha primero</option>
+                    </select>
+                  </label>
+                </div>
+
+                <div class="slide-actions">
+                  <button type="button" class="btn primary full-width" data-wizard-next>
+                    Continuar
+                  </button>
+                </div>
+              </div>
+
+              <!-- STEP 4: SUMMARY & DETAILS -->
+              <div class="wizard-slide" data-slide="3">
+                <div class="slide-nav">
+                  <button type="button" class="btn-back" data-wizard-prev>
+                    ← Volver
+                  </button>
+                </div>
+                <div class="slide-header">
+                  <h2>Último paso</h2>
+                  <p>Revisa la cita y abre la plantilla de WhatsApp.</p>
+                </div>
+
+                <div class="summary-card">
+                  <div class="summary-row">
+                    <span class="summary-label">Cita en</span>
+                    <span class="summary-value" data-summary-location>—</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-label">Para</span>
+                    <span class="summary-value" data-summary-service>—</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-label">Cuándo</span>
+                    <span class="summary-value"><span data-summary-date>—</span> a las
+                      <span data-summary-time>—</span></span>
+                  </div>
+                </div>
+
+                <div class="user-details-form">
+                  <textarea name="message" rows="2" placeholder="Nota adicional (opcional)"
+                    class="input-std"></textarea>
+                </div>
+
+                <p class="schedule-note">
+                  No te pedimos nombre ni apellidos aquí. Si hace falta, te lo
+                  preguntamos después por WhatsApp.
+                </p>
+
+                <div class="consent-block">
+                  <h3>Protección de datos</h3>
+                  <p>
+                    Conforme a la normativa vigente en materia de protección de datos, le informamos de que TODO
+                    ÓPTICA, S.L. (en adelante TODO ÓPTICA) es el responsable del tratamiento de sus datos, recopilados
+                    en el informe diagnóstico, con la finalidad de gestionar su relación con el centro óptico. Para
+                    poder prestar el servicio solicitado, será necesario tratar determinados datos de salud incluidos
+                    los facilitados directa y voluntariamente a la entidad. Si no autoriza dicho tratamiento, no
+                    podremos prestarle el servicio solicitado. La legitimación del tratamiento de sus datos deriva de
+                    la ejecución del contrato de prestación de servicios que contrate con TODO ÓPTICA, del
+                    consentimiento del interesado y en cumplimiento de las obligaciones legales que nos apliquen. Los
+                    destinatarios de sus datos serán las distintas áreas de nuestra entidad, así como los terceros a
+                    los que cedamos sus datos, cuando sea lícito conforme a lo dispuesto en la normativa vigente en
+                    materia de protección de datos. Tiene derecho a acceder, rectificar y suprimir sus datos, así como
+                    otros derechos, como se explica en la información adicional, que puede consultar en nuestra
+                    <a href="privacidad.html">Política de Privacidad</a>.
+                  </p>
+                  <p>
+                    Más información legal:
+                    <a href="aviso-legal.html">Aviso legal</a> ·
+                    <a href="cookies.html">Política de cookies</a>
+                  </p>
+                  <label class="checkbox-simple">
+                    <input type="checkbox" name="consent_general" required />
+                    <span>Acepto las condiciones generales y la <a href="privacidad.html">Política de Privacidad</a>.</span>
+                  </label>
+                  <div class="consent-list">
+                    <label class="checkbox-simple">
+                      <input type="checkbox" name="consent_marketing" />
+                      <span>Comunicaciones comerciales (por cualquier medio, incluido electrónico).</span>
+                    </label>
+                    <label class="checkbox-simple">
+                      <input type="checkbox" name="consent_graduation" />
+                      <span>Datos de graduación a otras ópticas del grupo y a terceros para prestar el servicio.</span>
+                    </label>
+                    <label class="checkbox-simple">
+                      <input type="checkbox" name="consent_whatsapp" required />
+                      <span>Acepto gestionar esta solicitud y las comunicaciones de la cita a través de WhatsApp.</span>
+                    </label>
+                  </div>
+                </div>
+
+                <button class="btn primary full-width" type="submit">
+                  Abrir WhatsApp con mi solicitud
+                </button>
+
+                <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+
+                <div id="form-success" class="form-success">
+                  <h3>Qué pasará al pulsar</h3>
+                  <p>
+                    Se abrirá WhatsApp con una plantilla ya preparada con el
+                    centro, el motivo y la franja elegida. Si necesitamos más
+                    datos, te los pedimos allí.
+                  </p>
+                  <div class="cta-actions">
+                    <a class="btn ghost small" data-fallback-wa
+                      href="https://wa.me/34601045111?text=Hola%2C%20quiero%20pedir%20una%20cita%20en%20Todo%20%C3%93ptica.">WhatsApp</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <aside class="appointment-aside">
+            <div class="appointment-aside-card">
+              <h3>Contacto rápido</h3>
+              <p class="appointment-aside-text" data-aside-center>
+                Selecciona un centro para ver WhatsApp directo y cómo llegar.
+              </p>
+              <div class="appointment-aside-actions" data-aside-actions hidden>
+                <a class="btn ghost small" data-aside-whatsapp
+                  href="https://wa.me/34601045111?text=Hola%2C%20quiero%20pedir%20una%20cita%20en%20Todo%20%C3%93ptica.">WhatsApp</a>
+                <a class="btn ghost small" data-aside-maps
+                  href="https://www.google.com/maps/search/?api=1&query=Paseo%20de%20Zorrilla%2062%2C%20Valladolid"
+                  target="_blank" rel="noreferrer">Ver en Maps</a>
+              </div>
+            </div>
+
+            <div class="appointment-aside-card appointment-aside-card--soft">
+              <h3>Después de abrir WhatsApp</h3>
+              <p>
+                Cerramos la cita por WhatsApp o teléfono. Si hace falta, ahí
+                mismo te pedimos nombre y apellidos y te proponemos otra hora.
+              </p>
+            </div>
+
+            <details class="appointment-aside-card appointment-aside-card--details">
+              <summary>Ver todos los contactos</summary>
+              <div class="direct-contact">
+                <div>
+                  <h3>WhatsApp de citas</h3>
+                  <p>
+                    <a
+                      href="https://wa.me/34601045111?text=Hola%2C%20quiero%20pedir%20una%20cita%20en%20Todo%20%C3%93ptica."
+                      target="_blank"
+                      rel="noreferrer"
+                    >+34 601 045 111</a>
+                  </p>
+                </div>
+                <div>
+                  <h3>Centros</h3>
+                  <p>
+                    <strong>Paseo de Zorrilla</strong><br />
+                    Paseo de Zorrilla 62 · Valladolid<br />
+                    <a href="tel:+34983226200">983 226 200</a> ·
+                    <a href="mailto:paseozorrilla@todooptica.es">paseozorrilla@todooptica.es</a>
+                  </p>
+                  <p>
+                    <strong>Labradores</strong><br />
+                    C/ Labradores 22 · Valladolid<br />
+                    <a href="tel:+34983397231">983 397 231</a> ·
+                    <a href="mailto:labradores@todooptica.es">labradores@todooptica.es</a>
+                  </p>
+                  <p>
+                    <strong>Donostiarra</strong><br />
+                    Avda. Donostiarra 24 · Madrid<br />
+                    <a href="tel:+34914031795">91 403 17 95</a> ·
+                    <a href="mailto:madrid@todooptica.es">madrid@todooptica.es</a>
+                  </p>
+                </div>
+              </div>
+            </details>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo.svg" alt="Todo Óptica" width="180" height="39" loading="lazy" />
+        <p>Óptica y audiología con tres centros en Valladolid y Madrid.</p>
+        <div class="footer-social">
+          <a href="https://es-es.facebook.com/TodoOpticaLabradores/" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/todooptica.va/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <p><a href="servicios.html">Servicios</a></p>
+        <p><a href="catalogo.html">Catálogo</a></p>
+        <p><a href="centros.html">Centros</a></p>
+        <p><a href="cita.html">Cita previa</a></p>
+        <p><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></p>
+        <p><a href="blog.html">Blog</a></p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <p><a href="aviso-legal.html">Aviso legal</a></p>
+        <p><a href="privacidad.html">Política de privacidad</a></p>
+        <p><a href="cookies.html">Política de cookies</a></p>
+        <p>TODO ÓPTICA, S.L. · CIF B47245063</p>
+        <p>Domicilio: Paseo de Zorrilla 62, 47006 Valladolid</p>
+        <p>Email legal: todooptica.zo@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Todo Óptica. Todos los derechos reservados.</p>
+      <p><a href="cita.html">Pedir cita</a></p>
+    </div>
+  </footer>
+
+  <script src="vendor/flatpickr/flatpickr.min.js"></script>
+  <script src="vendor/flatpickr/es.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

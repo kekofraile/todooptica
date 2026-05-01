@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo | Todo Óptica</title>
+    <meta
+      name="description"
+      content="Catálogo de monturas y marcas en Todo Óptica. Filtros por estilo y reserva para probar."
+    />
+    <meta name="theme-color" content="#0b9c4c" />
+    <meta name="view-transition" content="same-origin" />
+    <meta property="og:title" content="Catálogo | Todo Óptica" />
+    <meta
+      property="og:description"
+      content="Galería de monturas y colecciones con filtros y opciones para reservar."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Todo Óptica" />
+    <meta property="og:image" content="assets/img-eyewear.webp" />
+    <link rel="canonical" href="https://www.todooptica.es/catalogo.html" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">
+          <img
+            class="logo-img"
+            src="assets/logo.svg"
+            alt="Todo Óptica"
+            width="160"
+            height="35"
+          />
+        </a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="sr-only">Abrir menú</span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-nav" class="site-nav">
+          <a href="index.html">Inicio</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="control-miopia.html">Control de miopía</a>
+          <a href="tecnologia.html">Tecnología</a>
+          <a href="audiologia.html">Audiología</a>
+          <a class="active" href="catalogo.html">Catálogo</a>
+          <a href="centros.html">Centros</a>
+          <a class="cta" href="cita.html">Cita previa</a>
+          <a href="juegos.html">Juegos</a>
+          <a href="blog.html">Blog</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Catálogo</p>
+            <h1>Monturas que se eligen por ajuste, carácter y uso real.</h1>
+            <p class="lead">
+              Una selección orientativa para llegar a tienda con una idea clara.
+              Después afinamos forma, puente, calibre y lente contigo.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="cita.html?service=Gafas%20graduadas">Reserva para probar</a>
+              <a
+                class="btn ghost"
+                href="https://wa.me/34601045111?text=Hola%2C%20quiero%20pedir%20presupuesto%20para%20monturas%20y%20gafas."
+                target="_blank"
+                rel="noreferrer"
+                >Pide presupuesto</a
+              >
+            </div>
+            <div class="hero-facts" aria-label="Claves del catálogo">
+              <span>Graduado y sol</span>
+              <span>Adulto e infantil</span>
+              <span>Ajuste en tienda</span>
+            </div>
+          </div>
+          <div class="hero-media reveal" aria-hidden="true">
+            <div class="media-card media-card--main">
+              <img
+                src="assets/img-eyewear.webp"
+                srcset="assets/img-eyewear-640w.webp 640w, assets/img-eyewear.webp 768w"
+                sizes="(max-width: 900px) 90vw, 520px"
+                alt=""
+                width="768"
+                height="768"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section catalog-editorial" data-catalog>
+        <div class="container">
+          <div class="catalog-shell reveal">
+            <div class="catalog-shell__top">
+              <div class="catalog-shell__headline">
+                <p class="eyebrow">Selección en tienda</p>
+                <h2>No es un catálogo infinito: es una primera criba con criterio.</h2>
+                <p>
+                  Filtra por familia y quédate con la línea que mejor encaje con
+                  tu cara, tu rutina y el tipo de lente que vas a llevar.
+                </p>
+              </div>
+
+              <aside class="catalog-shell__summary" aria-label="Resumen del catálogo">
+                <p class="catalog-shell__summary-label">Selección visible</p>
+                <p class="catalog-shell__summary-count" data-catalog-count>8 selecciones visibles</p>
+                <p class="catalog-shell__summary-note">
+                  Te ayudamos a ajustar puente, varilla y peso final en
+                  cualquiera de los tres centros.
+                </p>
+              </aside>
+            </div>
+
+            <div class="catalog-toolbar">
+              <p class="catalog-toolbar__copy">
+                Empieza por el uso que quieres resolver y después afina en consulta.
+              </p>
+              <div class="catalog-filters">
+                <button class="catalog-filter active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+                <button class="catalog-filter" type="button" data-filter="premium" aria-pressed="false">Premium</button>
+                <button class="catalog-filter" type="button" data-filter="kids" aria-pressed="false">Niños</button>
+                <button class="catalog-filter" type="button" data-filter="sport" aria-pressed="false">Deportiva</button>
+                <button class="catalog-filter" type="button" data-filter="eco" aria-pressed="false">Eco</button>
+                <button class="catalog-filter" type="button" data-filter="sol" aria-pressed="false">Sol</button>
+              </div>
+            </div>
+
+            <div class="catalog-grid reveal">
+              <article class="catalog-card" data-catalog-item data-tags="premium,lifestyle" style="--catalog-accent: #2f7d58; --catalog-glow: rgba(47, 125, 88, 0.18)">
+                <div class="catalog-card__media">
+                  <img src="assets/precision7.webp" srcset="assets/precision7-640w.webp 640w, assets/precision7.webp 1024w"
+                    sizes="(max-width: 900px) 90vw, 520px" alt="Montura premium de acabado oscuro" />
+                </div>
+                <div class="catalog-card__body">
+                  <div class="catalog-card__eyebrow-row">
+                    <span class="catalog-meta">Premium</span>
+                    <span class="catalog-card__index">01</span>
+                  </div>
+                  <h3>Colección firma</h3>
+                  <p class="catalog-card__lede">
+                    Acetatos pulidos y perfiles limpios para quien quiere una
+                    gafa sobria, precisa y con presencia.
+                  </p>
+                  <div class="catalog-card__specs">
+                    <span>Acetato pulido</span>
+                    <span>Ajuste estable</span>
+                    <span>Trabajo y diario</span>
+                  </div>
+                  <p class="catalog-card__fit">
+                    <strong>Encaja si buscas:</strong> una montura seria, ligera
+                    en el gesto y cómoda para muchas horas seguidas.
+                  </p>
+                  <div class="catalog-card__footer">
+                    <span class="catalog-card__note">Adulto</span>
+                    <a class="catalog-card__link" href="cita.html?service=Gafas%20graduadas">Probar en tienda</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card" data-catalog-item data-tags="kids" style="--catalog-accent: #5a9a62; --catalog-glow: rgba(90, 154, 98, 0.18)">
+                <div class="catalog-card__media">
+                  <img src="assets/img-myopia.webp" srcset="assets/img-myopia-640w.webp 640w, assets/img-myopia.webp 600w"
+                    sizes="(max-width: 900px) 90vw, 520px" alt="Monturas infantiles de consulta" />
+                </div>
+                <div class="catalog-card__body">
+                  <div class="catalog-card__eyebrow-row">
+                    <span class="catalog-meta">Kids</span>
+                    <span class="catalog-card__index">02</span>
+                  </div>
+                  <h3>Infantil flexible</h3>
+                  <p class="catalog-card__lede">
+                    Modelos ligeros y resistentes para niños que necesitan una
+                    gafa cómoda desde la mañana hasta el patio.
+                  </p>
+                  <div class="catalog-card__specs">
+                    <span>Flexibles</span>
+                    <span>Puente cómodo</span>
+                    <span>Uso escolar</span>
+                  </div>
+                  <p class="catalog-card__fit">
+                    <strong>Encaja si buscas:</strong> seguridad en el ajuste,
+                    menos presión y una montura que aguante ritmo diario.
+                  </p>
+                  <div class="catalog-card__footer">
+                    <span class="catalog-card__note">Infantil</span>
+                    <a class="catalog-card__link" href="cita.html?service=Miopía%20infantil">Ver en consulta</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card" data-catalog-item data-tags="sport" style="--catalog-accent: #2e8091; --catalog-glow: rgba(46, 128, 145, 0.18)">
+                <div class="catalog-card__media">
+                  <img src="assets/img-tech.webp" srcset="assets/img-tech-640w.webp 640w, assets/img-tech.webp 768w"
+                    sizes="(max-width: 900px) 90vw, 520px" alt="Monturas deportivas envolventes" />
+                </div>
+                <div class="catalog-card__body">
+                  <div class="catalog-card__eyebrow-row">
+                    <span class="catalog-meta">Sport</span>
+                    <span class="catalog-card__index">03</span>
+                  </div>
+                  <h3>Deportiva envolvente</h3>
+                  <p class="catalog-card__lede">
+                    Líneas más técnicas para quienes necesitan estabilidad,
+                    cobertura y una lectura limpia del entorno.
+                  </p>
+                  <div class="catalog-card__specs">
+                    <span>Mayor cobertura</span>
+                    <span>Ligereza</span>
+                    <span>Exterior</span>
+                  </div>
+                  <p class="catalog-card__fit">
+                    <strong>Encaja si buscas:</strong> una gafa activa, con
+                    agarre firme y sensación de protección.
+                  </p>
+                  <div class="catalog-card__footer">
+                    <span class="catalog-card__note">Adulto</span>
+                    <a class="catalog-card__link" href="cita.html?service=Gafas%20graduadas">Preparar selección</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card" data-catalog-item data-tags="eco,lifestyle" style="--catalog-accent: #5d8b4e; --catalog-glow: rgba(93, 139, 78, 0.18)">
+                <div class="catalog-card__media">
+                  <img src="assets/img-eye.webp" srcset="assets/img-eye-640w.webp 640w, assets/img-eye.webp 991w"
+                    sizes="(max-width: 900px) 90vw, 520px" alt="Monturas de materiales sostenibles" />
+                </div>
+                <div class="catalog-card__body">
+                  <div class="catalog-card__eyebrow-row">
+                    <span class="catalog-meta">Eco</span>
+                    <span class="catalog-card__index">04</span>
+                  </div>
+                  <h3>Materiales responsables</h3>
+                  <p class="catalog-card__lede">
+                    Opciones con un lenguaje más natural y acabados mates o
+                    translúcidos, sin perder presencia.
+                  </p>
+                  <div class="catalog-card__specs">
+                    <span>Bioacetato</span>
+                    <span>Acabado suave</span>
+                    <span>Uso diario</span>
+                  </div>
+                  <p class="catalog-card__fit">
+                    <strong>Encaja si buscas:</strong> una pieza actual, ligera
+                    a la vista y con materiales más conscientes.
+                  </p>
+                  <div class="catalog-card__footer">
+                    <span class="catalog-card__note">Adulto</span>
+                    <a class="catalog-card__link" href="cita.html?service=Gafas%20graduadas">Ver alternativas</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card" data-catalog-item data-tags="sol,lifestyle" style="--catalog-accent: #6c8c38; --catalog-glow: rgba(108, 140, 56, 0.18)">
+                <div class="catalog-card__media">
+                  <img src="assets/ai-hero-eyeglasses.webp"
+                    srcset="assets/ai-hero-eyeglasses-640w.webp 640w, assets/ai-hero-eyeglasses.webp 1024w"
+                    sizes="(max-width: 900px) 90vw, 520px" alt="Gafas de sol graduadas" />
+                </div>
+                <div class="catalog-card__body">
+                  <div class="catalog-card__eyebrow-row">
+                    <span class="catalog-meta">Sol</span>
+                    <span class="catalog-card__index">05</span>
+                  </div>
+                  <h3>Sol graduado</h3>
+                  <p class="catalog-card__lede">
+                    Protección UV con lectura cómoda, opción polarizada y
+                    monturas pensadas para no perder equilibrio ni estilo.
+                  </p>
+                  <div class="catalog-card__specs">
+                    <span>UV y polarizado</span>
+                    <span>Graduado</span>
+                    <span>Conducción y exterior</span>
+                  </div>
+                  <p class="catalog-card__fit">
+                    <strong>Encaja si buscas:</strong> descanso visual al sol y
+                    una montura que puedas usar de verdad, no solo en vacaciones.
+                  </p>
+                  <div class="catalog-card__footer">
+                    <span class="catalog-card__note">Sol</span>
+                    <a class="catalog-card__link" href="cita.html?service=Gafas%20de%20sol">Pedir cita</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card" data-catalog-item data-tags="premium" style="--catalog-accent: #3a6f5a; --catalog-glow: rgba(58, 111, 90, 0.18)">
+                <div class="catalog-card__media">
+                  <img src="assets/img-eyewear.webp" srcset="assets/img-eyewear-640w.webp 640w, assets/img-eyewear.webp 768w"
+                    sizes="(max-width: 900px) 90vw, 520px" alt="Monturas premium ligeras" />
+                </div>
+                <div class="catalog-card__body">
+                  <div class="catalog-card__eyebrow-row">
+                    <span class="catalog-meta">Premium</span>
+                    <span class="catalog-card__index">06</span>
+                  </div>
+                  <h3>Elegante y ligera</h3>
+                  <p class="catalog-card__lede">
+                    Diseños limpios de alta gama para quien quiere presencia
+                    discreta y una sensación muy afinada en el rostro.
+                  </p>
+                  <div class="catalog-card__specs">
+                    <span>Titanio</span>
+                    <span>Perfil fino</span>
+                    <span>Larga jornada</span>
+                  </div>
+                  <p class="catalog-card__fit">
+                    <strong>Encaja si buscas:</strong> una montura refinada, con
+                    peso contenido y muy fácil de integrar en el día a día.
+                  </p>
+                  <div class="catalog-card__footer">
+                    <span class="catalog-card__note">Adulto</span>
+                    <a class="catalog-card__link" href="cita.html?service=Gafas%20graduadas">Afinar selección</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card" data-catalog-item data-tags="lifestyle" style="--catalog-accent: #4f7c67; --catalog-glow: rgba(79, 124, 103, 0.18)">
+                <div class="catalog-card__media">
+                  <img src="assets/p7-sphere.webp" srcset="assets/p7-sphere-640w.webp 640w, assets/p7-sphere.webp 991w"
+                    sizes="(max-width: 900px) 90vw, 520px" alt="Monturas urbanas de diario" />
+                </div>
+                <div class="catalog-card__body">
+                  <div class="catalog-card__eyebrow-row">
+                    <span class="catalog-meta">Lifestyle</span>
+                    <span class="catalog-card__index">07</span>
+                  </div>
+                  <h3>Urbana de diario</h3>
+                  <p class="catalog-card__lede">
+                    Formas versátiles para quienes quieren una montura fácil de
+                    llevar, sin rigidez y con buen equilibrio visual.
+                  </p>
+                  <div class="catalog-card__specs">
+                    <span>Versátil</span>
+                    <span>Ligera visualmente</span>
+                    <span>Uso mixto</span>
+                  </div>
+                  <p class="catalog-card__fit">
+                    <strong>Encaja si buscas:</strong> una gafa amable, adaptable
+                    y con suficiente carácter sin volverse protagonista.
+                  </p>
+                  <div class="catalog-card__footer">
+                    <span class="catalog-card__note">Adulto</span>
+                    <a class="catalog-card__link" href="cita.html?service=Gafas%20graduadas">Ver monturas</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card" data-catalog-item data-tags="kids,eco" style="--catalog-accent: #6aa06b; --catalog-glow: rgba(106, 160, 107, 0.18)">
+                <div class="catalog-card__media">
+                  <img src="assets/ai-eye.webp" srcset="assets/ai-eye-640w.webp 640w, assets/ai-eye.webp 768w"
+                    sizes="(max-width: 900px) 90vw, 520px" alt="Monturas infantiles ligeras" />
+                </div>
+                <div class="catalog-card__body">
+                  <div class="catalog-card__eyebrow-row">
+                    <span class="catalog-meta">Kids / Eco</span>
+                    <span class="catalog-card__index">08</span>
+                  </div>
+                  <h3>Comfort kids</h3>
+                  <p class="catalog-card__lede">
+                    Monturas flexibles, ligeras y fáciles de ajustar para niños
+                    que necesitan comodidad real desde el primer día.
+                  </p>
+                  <div class="catalog-card__specs">
+                    <span>Ligereza</span>
+                    <span>Varilla flexible</span>
+                    <span>Uso continuo</span>
+                  </div>
+                  <p class="catalog-card__fit">
+                    <strong>Encaja si buscas:</strong> una montura infantil con
+                    menos presión, más estabilidad y mantenimiento sencillo.
+                  </p>
+                  <div class="catalog-card__footer">
+                    <span class="catalog-card__note">Infantil</span>
+                    <a class="catalog-card__link" href="cita.html?service=Miopía%20infantil">Probar con calma</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="catalog-appointment reveal">
+              <div>
+                <p class="eyebrow">Prueba en tienda</p>
+                <h2>La montura buena no es la que te gusta en foto, sino la que te queda bien al minuto veinte.</h2>
+                <p>
+                  Reserva una cita y te preparamos una selección corta para
+                  probar con calma, ya pensada para tu graduación y tu ritmo
+                  diario.
+                </p>
+              </div>
+              <div class="catalog-actions">
+                <a class="btn primary" href="cita.html?service=Gafas%20graduadas">Reserva para probar</a>
+                <a class="btn ghost" href="https://wa.me/34601045111?text=Hola%2C%20quiero%20pedir%20presupuesto%20para%20monturas%20y%20gafas."
+                  target="_blank" rel="noreferrer">Pide presupuesto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <img
+            class="footer-logo"
+            src="assets/logo.svg"
+            alt="Todo Óptica"
+            width="180"
+            height="39"
+            loading="lazy"
+          />
+          <p>Óptica y audiología con tres centros en Valladolid y Madrid.</p>
+          <div class="footer-social">
+            <a
+              href="https://es-es.facebook.com/TodoOpticaLabradores/"
+              target="_blank"
+              rel="noreferrer"
+              >Facebook</a
+            >
+            <a
+              href="https://www.instagram.com/todooptica.va/"
+              target="_blank"
+              rel="noreferrer"
+              >Instagram</a
+            >
+          </div>
+        </div>
+        <div>
+          <h4>Enlaces</h4>
+          <p><a href="servicios.html">Servicios</a></p>
+          <p><a href="catalogo.html">Catálogo</a></p>
+          <p><a href="centros.html">Centros</a></p>
+          <p><a href="cita.html">Cita previa</a></p>
+          <p><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></p>
+          <p><a href="blog.html">Blog</a></p>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <p><a href="aviso-legal.html">Aviso legal</a></p>
+          <p><a href="privacidad.html">Política de privacidad</a></p>
+          <p><a href="cookies.html">Política de cookies</a></p>
+          <p>TODO ÓPTICA, S.L. · CIF B47245063</p>
+          <p>Domicilio: Paseo de Zorrilla 62, 47006 Valladolid</p>
+          <p>Email legal: todooptica.zo@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Todo Óptica. Todos los derechos reservados.</p>
+        <p><a href="cita.html">Pedir cita</a></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

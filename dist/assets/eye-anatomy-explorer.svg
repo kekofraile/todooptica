@@ -1,0 +1,189 @@
+<svg
+  width="1100"
+  height="620"
+  viewBox="0 0 1100 620"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id="shellOuter" x1="220" y1="108" x2="900" y2="508" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDFC"/>
+      <stop offset="0.34" stop-color="#F8F5F1"/>
+      <stop offset="0.74" stop-color="#EADFD6"/>
+      <stop offset="1" stop-color="#D6C4B9"/>
+    </linearGradient>
+    <linearGradient id="shellInner" x1="262" y1="168" x2="836" y2="456" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9F4"/>
+      <stop offset="0.56" stop-color="#F3E6DC"/>
+      <stop offset="1" stop-color="#E1CCC0"/>
+    </linearGradient>
+    <linearGradient id="retinaBand" x1="666" y1="142" x2="852" y2="454" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD7A7"/>
+      <stop offset="0.42" stop-color="#F3AC77"/>
+      <stop offset="1" stop-color="#DC6F56"/>
+    </linearGradient>
+    <linearGradient id="choroidBand" x1="652" y1="136" x2="838" y2="466" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C16C5B"/>
+      <stop offset="0.54" stop-color="#A24841"/>
+      <stop offset="1" stop-color="#702F2D"/>
+    </linearGradient>
+    <linearGradient id="vitreousBody" x1="318" y1="164" x2="772" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4C794"/>
+      <stop offset="0.34" stop-color="#F4D7AB"/>
+      <stop offset="0.68" stop-color="#F7E8BE"/>
+      <stop offset="1" stop-color="#FCEFC7"/>
+    </linearGradient>
+    <radialGradient id="vitreousGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(428 404) rotate(-18) scale(276 188)">
+      <stop stop-color="#FFF4D5" stop-opacity="0.96"/>
+      <stop offset="0.55" stop-color="#FFF0C7" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#FFF0C7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="corneaBody" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(116 216) rotate(18) scale(112 206)">
+      <stop stop-color="#F9FEFF" stop-opacity="0.94"/>
+      <stop offset="0.42" stop-color="#D9EEF8" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#87ABC2" stop-opacity="0.36"/>
+    </radialGradient>
+    <linearGradient id="corneaEdge" x1="116" y1="170" x2="214" y2="442" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#678EA4"/>
+      <stop offset="1" stop-color="#2E556B"/>
+    </linearGradient>
+    <linearGradient id="aqueous" x1="148" y1="224" x2="276" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFC" stop-opacity="0.82"/>
+      <stop offset="0.4" stop-color="#DBECF3" stop-opacity="0.44"/>
+      <stop offset="1" stop-color="#C5D8E3" stop-opacity="0.14"/>
+    </linearGradient>
+    <linearGradient id="irisBody" x1="212" y1="202" x2="294" y2="424" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7D9366"/>
+      <stop offset="0.3" stop-color="#657A52"/>
+      <stop offset="0.66" stop-color="#445740"/>
+      <stop offset="1" stop-color="#243033"/>
+    </linearGradient>
+    <radialGradient id="irisSheen" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(236 298) rotate(90) scale(112 34)">
+      <stop stop-color="#D3D9C2" stop-opacity="0.64"/>
+      <stop offset="1" stop-color="#D3D9C2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lensCapsule" x1="298" y1="194" x2="380" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF2F6" stop-opacity="0.92"/>
+      <stop offset="0.44" stop-color="#C8D8EB" stop-opacity="0.86"/>
+      <stop offset="1" stop-color="#6B7F9C" stop-opacity="0.72"/>
+    </linearGradient>
+    <radialGradient id="lensCore" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(332 314) rotate(90) scale(86 52)">
+      <stop stop-color="#D5E5F8" stop-opacity="0.98"/>
+      <stop offset="0.58" stop-color="#B7C9E2" stop-opacity="0.66"/>
+      <stop offset="1" stop-color="#A0B0C9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ciliaryBody" x1="202" y1="198" x2="304" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D8A0AA"/>
+      <stop offset="1" stop-color="#AA6B75"/>
+    </linearGradient>
+    <linearGradient id="opticSheath" x1="850" y1="322" x2="1042" y2="404" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3D8BD"/>
+      <stop offset="0.5" stop-color="#E5BF9D"/>
+      <stop offset="1" stop-color="#D0A379"/>
+    </linearGradient>
+    <linearGradient id="opticCore" x1="860" y1="322" x2="1022" y2="394" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF0CB"/>
+      <stop offset="0.42" stop-color="#F6D89E"/>
+      <stop offset="1" stop-color="#E6B96D"/>
+    </linearGradient>
+    <filter id="softShadow" x="88" y="82" width="986" height="470" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="26" stdDeviation="26" flood-color="#352C26" flood-opacity="0.14"/>
+    </filter>
+    <filter id="innerBloom" x="82" y="152" width="162" height="278" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <clipPath id="innerGlobeClip">
+      <path d="M252 180C425 90 714 112 818 244C864 302 868 381 824 436C727 556 415 546 252 436C322 391 346 246 252 180Z"/>
+    </clipPath>
+    <clipPath id="irisTop">
+      <path d="M214 212C244 226 260 260 260 310C260 346 251 378 214 404C230 370 236 344 236 310C236 276 231 250 214 212Z"/>
+    </clipPath>
+    <clipPath id="irisBottom">
+      <path d="M260 310C260 346 251 378 214 404C258 392 286 356 286 310C286 263 260 227 214 212C244 226 260 260 260 310Z"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#softShadow)" transform="matrix(0.98 0 0 1.1 8 -20)">
+    <path d="M219 160C406 55 722 82 842 228C896 294 904 382 858 447C748 603 388 582 218 461C300 405 331 242 219 160Z" fill="url(#shellOuter)"/>
+    <path d="M251 180C425 90 714 112 818 244C864 302 868 381 824 436C727 556 415 546 252 436C322 391 346 246 252 180Z" fill="url(#shellInner)"/>
+
+    <g clip-path="url(#innerGlobeClip)">
+      <path d="M250 180C426 92 717 114 822 246C867 303 870 380 826 435C728 557 414 548 252 436C323 390 346 246 250 180Z" fill="url(#vitreousBody)"/>
+      <path d="M250 180C426 92 717 114 822 246C867 303 870 380 826 435C728 557 414 548 252 436C323 390 346 246 250 180Z" fill="url(#vitreousGlow)"/>
+      <ellipse cx="616" cy="214" rx="236" ry="122" fill="#A77463" opacity="0.1"/>
+      <ellipse cx="430" cy="414" rx="234" ry="142" fill="#FFF7D8" opacity="0.34"/>
+
+      <path d="M640 140C763 165 846 233 856 312C866 391 776 456 649 478" stroke="#FCF0D8" stroke-width="50" stroke-linecap="round" opacity="0.98"/>
+      <path d="M650 142C765 168 842 235 852 312C861 389 782 454 660 474" stroke="url(#choroidBand)" stroke-width="33" stroke-linecap="round"/>
+      <path d="M661 151C762 175 829 238 837 312C843 385 776 443 672 466" stroke="url(#retinaBand)" stroke-width="15" stroke-linecap="round"/>
+
+      <ellipse cx="740" cy="330" rx="18" ry="18" fill="#D77E63" opacity="0.28"/>
+      <ellipse cx="774" cy="325" rx="23" ry="20" fill="#D9C69B" opacity="0.92"/>
+      <ellipse cx="774" cy="325" rx="10" ry="9" fill="#FFF3D5" opacity="0.74"/>
+
+      <path d="M774 325C746 300 714 282 675 271C643 262 611 260 577 264" stroke="#6D8598" stroke-width="3.1" stroke-linecap="round" opacity="0.4"/>
+      <path d="M774 325C742 315 705 315 669 323C635 331 603 345 570 364" stroke="#7F97A8" stroke-width="2.9" stroke-linecap="round" opacity="0.36"/>
+      <path d="M774 325C748 339 719 358 692 382C669 402 645 425 617 448" stroke="#8BA2B2" stroke-width="2.7" stroke-linecap="round" opacity="0.34"/>
+      <path d="M776 326C758 305 738 289 713 278" stroke="#A2B4C0" stroke-width="2" stroke-linecap="round" opacity="0.26"/>
+      <path d="M776 326C758 337 736 352 716 370" stroke="#A2B4C0" stroke-width="2" stroke-linecap="round" opacity="0.24"/>
+
+      <ellipse cx="432" cy="386" rx="198" ry="126" fill="#FFF4D9" opacity="0.34"/>
+      <ellipse cx="522" cy="228" rx="158" ry="92" fill="#FFE6BE" opacity="0.12"/>
+      <ellipse cx="708" cy="230" rx="132" ry="86" fill="#9A564A" opacity="0.08"/>
+    </g>
+
+    <path d="M110 194C152 192 182 216 197 256C208 286 208 336 198 368C182 413 151 435 108 432C127 392 134 347 134 311C134 272 127 231 110 194Z" fill="url(#corneaBody)"/>
+    <path d="M111 194C152 192 182 216 197 256C209 288 209 336 198 369C182 414 151 435 108 432" stroke="url(#corneaEdge)" stroke-width="4"/>
+    <path d="M82 182C128 202 151 250 151 309C151 370 128 418 83 440" stroke="#4E6174" stroke-width="9" stroke-linecap="round" opacity="0.88"/>
+    <path d="M138 210C162 221 177 251 182 302C187 353 175 389 146 410" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round" opacity="0.38"/>
+    <path d="M162 230C174 255 178 353 164 390" stroke="#EFF9FD" stroke-width="2.6" stroke-linecap="round" opacity="0.36"/>
+    <ellipse cx="133" cy="245" rx="42" ry="20" fill="#FFFFFF" fill-opacity="0.48" transform="rotate(-18 133 245)"/>
+    <ellipse cx="148" cy="305" rx="22" ry="11" fill="#FFFFFF" fill-opacity="0.2" transform="rotate(-10 148 305)"/>
+
+    <path d="M138 235C180 210 223 208 252 222C238 247 232 277 232 310C232 343 238 374 252 397C224 411 181 410 140 386C156 352 161 272 138 235Z" fill="url(#aqueous)"/>
+
+    <path d="M205 198C258 201 304 239 322 286L286 298C276 260 248 231 212 213Z" fill="url(#ciliaryBody)" opacity="0.92"/>
+    <path d="M205 422C257 419 303 381 321 334L285 322C275 361 247 390 212 407Z" fill="url(#ciliaryBody)" opacity="0.9"/>
+
+    <path d="M214 212C244 226 260 260 260 310C260 346 251 378 214 404C230 370 236 344 236 310C236 276 231 250 214 212Z" fill="url(#irisBody)"/>
+    <path d="M260 310C260 346 251 378 214 404C258 392 286 356 286 310C286 263 260 227 214 212C244 226 260 260 260 310Z" fill="#2D3231" opacity="0.88"/>
+    <path d="M214 212C244 226 260 260 260 310C260 346 251 378 214 404" stroke="#0F1518" stroke-width="2.5" opacity="0.28"/>
+    <path d="M224 224C245 248 252 275 252 309C252 343 245 370 225 392" stroke="url(#irisSheen)" stroke-width="9" stroke-linecap="round" opacity="0.86"/>
+
+    <g clip-path="url(#irisTop)">
+      <path d="M202 214L260 310" stroke="#BCC4A4" stroke-width="3" stroke-linecap="round" opacity="0.42"/>
+      <path d="M206 202L252 296" stroke="#61724F" stroke-width="2.6" stroke-linecap="round" opacity="0.38"/>
+      <path d="M214 194L248 286" stroke="#DCE4C6" stroke-width="2.2" stroke-linecap="round" opacity="0.44"/>
+      <path d="M198 228L258 320" stroke="#293133" stroke-width="2.2" stroke-linecap="round" opacity="0.4"/>
+    </g>
+    <g clip-path="url(#irisBottom)">
+      <path d="M203 406L258 314" stroke="#BCC4A4" stroke-width="3" stroke-linecap="round" opacity="0.42"/>
+      <path d="M209 418L254 326" stroke="#61724F" stroke-width="2.5" stroke-linecap="round" opacity="0.36"/>
+      <path d="M197 390L246 304" stroke="#293133" stroke-width="2.1" stroke-linecap="round" opacity="0.38"/>
+    </g>
+
+    <ellipse cx="254" cy="310" rx="16" ry="57" fill="#111722"/>
+    <ellipse cx="249" cy="288" rx="7" ry="11" fill="#FFFFFF" fill-opacity="0.16" transform="rotate(-16 249 288)"/>
+
+    <path d="M322 192C365 229 376 390 324 428C280 388 281 232 322 192Z" fill="url(#lensCapsule)"/>
+    <path d="M322 192C365 229 376 390 324 428C280 388 281 232 322 192Z" stroke="#6A7990" stroke-width="3"/>
+    <ellipse cx="320" cy="312" rx="58" ry="104" fill="#8093B5" opacity="0.1"/>
+    <ellipse cx="325" cy="311" rx="41" ry="78" fill="url(#lensCore)"/>
+    <path d="M304 218C323 254 329 357 309 405" stroke="#F7FBFF" stroke-width="3.2" stroke-linecap="round" opacity="0.48"/>
+    <path d="M347 236C358 278 358 348 344 386" stroke="#60748F" stroke-width="2.1" stroke-linecap="round" opacity="0.38"/>
+
+    <path d="M840 300C902 306 960 327 1018 356C1031 362 1041 374 1037 389C1032 405 1017 414 1000 413C946 408 893 404 841 410L840 300Z" fill="url(#opticSheath)"/>
+    <path d="M848 325C903 329 952 344 1000 368" stroke="url(#opticCore)" stroke-width="28" stroke-linecap="round"/>
+    <path d="M851 340C903 344 950 360 998 384" stroke="#C07F63" stroke-width="3.4" stroke-linecap="round" opacity="0.34"/>
+    <path d="M853 318C898 320 942 332 989 353" stroke="#A66559" stroke-width="2.8" stroke-linecap="round" opacity="0.26"/>
+    <path d="M849 352C894 360 940 377 986 400" stroke="#8D6EA6" stroke-width="5.5" stroke-linecap="round" opacity="0.54"/>
+    <path d="M851 338C896 344 942 360 991 384" stroke="#6798C8" stroke-width="5.5" stroke-linecap="round" opacity="0.54"/>
+
+    <path d="M218 160C406 55 722 82 842 228C896 294 904 382 858 447C748 603 388 582 218 461" stroke="#FFF5ED" stroke-width="8" stroke-linecap="round" opacity="0.58"/>
+    <path d="M252 180C425 90 714 112 818 244C864 302 868 381 824 436C727 556 415 546 252 436" stroke="#D7BBB0" stroke-width="5" stroke-linecap="round" opacity="0.48"/>
+  </g>
+
+  <g filter="url(#innerBloom)">
+    <ellipse cx="120" cy="236" rx="44" ry="62" fill="#FFFFFF" fill-opacity="0.18"/>
+  </g>
+</svg>

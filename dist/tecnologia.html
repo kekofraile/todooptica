@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tecnología | Todo Óptica</title>
+  <meta name="description"
+    content="Tecnología avanzada en Todo Óptica: Vision-R 700, ICARE, retinografía digital, lámpara de hendidura con fotografía, topografía corneal y VisiOffice X para medidas 3D." />
+  <meta name="theme-color" content="#0b9c4c" />
+  <meta name="view-transition" content="same-origin" />
+  <meta property="og:title" content="Tecnología | Todo Óptica" />
+  <meta property="og:description"
+    content="Diagnóstico preciso y ajuste milimétrico con tecnología avanzada en Valladolid y Madrid." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Todo Óptica" />
+  <meta property="og:image" content="assets/img-tech.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://www.todooptica.es/tecnologia.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="fonts.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Tecnología - Todo Óptica",
+        "url": "https://www.todooptica.es/tecnologia.html",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Todo Óptica",
+          "url": "https://www.todooptica.es/"
+        }
+      }
+    </script>
+</head>
+
+<body data-service="Salud visual">
+  <div class="background-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <img class="logo-img" src="assets/logo.svg" alt="Todo Óptica" width="160" height="35" />
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Abrir menú</span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="control-miopia.html">Control de miopía</a>
+        <a class="active" href="tecnologia.html">Tecnología</a>
+        <a href="audiologia.html">Audiología</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="centros.html">Centros</a>
+        <a class="cta" href="cita.html">Cita previa</a>
+        <a href="juegos.html">Juegos</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Tecnología avanzada</p>
+          <h1>Diagnóstico preciso. Ajuste milimétrico.</h1>
+          <p class="lead">
+            La diferencia entre “ver bien” y “ver perfecto” suele estar en los
+            datos. Por eso trabajamos con equipos que nos permiten medir con
+            precisión y personalizar.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="cita.html?service=Salud%20visual">Pedir cita</a>
+            <a class="btn ghost" href="servicios.html">Ver servicios</a>
+          </div>
+        </div>
+
+        <div class="hero-media reveal" aria-hidden="true">
+          <div class="media-card media-card--main">
+            <img src="assets/img-tech.webp" srcset="assets/img-tech-640w.webp 640w, assets/img-tech.webp 768w"
+              sizes="(max-width: 900px) 90vw, 520px" alt="" width="768" height="768" loading="eager"
+              decoding="async" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN JUEGO: FOCUS HUNTER -->
+    <section class="section game-section" id="desafio-enfoque">
+      <div class="container">
+        <div class="game-wrapper reveal">
+          <div class="game-intro">
+            <p class="eyebrow">Desafío de Enfoque</p>
+            <h2>¿Tienes ojo de águila?</h2>
+            <p>
+              La precisión es nuestra obsesión. Demuestra tus reflejos capturando
+              la imagen en el punto exacto de nitidez perfecta (0% borroso).
+            </p>
+            <div class="game-stats">
+              <div class="stat-box">
+                <span class="stat-label">Racha</span>
+                <span class="stat-value" data-game-streak>0</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-label">Mejor</span>
+                <span class="stat-value" data-game-best>0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-stage">
+            <div class="game-viewport">
+              <!-- Imagen que se va a desenfocar -->
+              <img src="assets/img-eye.webp" alt="Imagen de prueba de enfoque" class="game-target" data-game-target
+                loading="lazy" />
+
+              <!-- Overlay de visor de cámara -->
+              <div class="viewfinder-overlay">
+                <div class="crosshair center"></div>
+                <div class="bracket tl"></div>
+                <div class="bracket tr"></div>
+                <div class="bracket bl"></div>
+                <div class="bracket br"></div>
+              </div>
+
+              <!-- Feedback visual del resultado -->
+              <div class="game-feedback" data-game-feedback hidden>
+                <span class="feedback-icon">🎯</span>
+                <span class="feedback-text">¡Perfecto!</span>
+              </div>
+            </div>
+
+            <div class="game-controls">
+              <button class="btn primary large" data-game-trigger>
+                <span class="camera-icon">📸</span>
+                <span data-game-trigger-label>Empezar desafío</span>
+              </button>
+              <div class="game-settings">
+                <label class="game-field">
+                  <span>Dificultad</span>
+                  <select data-game-difficulty>
+                    <option value="calm">Calmado</option>
+                    <option value="standard" selected>Estándar</option>
+                    <option value="pro">Pro</option>
+                  </select>
+                </label>
+                <label class="game-field">
+                  <span>Modo</span>
+                  <select data-game-mode>
+                    <option value="practice" selected>Práctica</option>
+                    <option value="timed">Contrarreloj 30s</option>
+                  </select>
+                </label>
+                <button class="btn ghost small" type="button" data-game-mute>Sonido: On</button>
+              </div>
+              <div class="game-extra">
+                <div class="stat-box">
+                  <span class="stat-label">Tiempo</span>
+                  <span class="stat-value" data-game-timer>∞</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-label">Perfectos</span>
+                  <span class="stat-value" data-game-perfect>0</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-label">Precisión</span>
+                  <span class="stat-value" data-game-accuracy>0%</span>
+                </div>
+              </div>
+              <div class="game-summary" data-game-summary hidden></div>
+              <p class="game-hint">Pulsa el botón o la imagen cuando esté 100% nítida</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section scrolly" id="flujo">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Flujo de medición</p>
+          <h2>De la pregunta al dato… y del dato al ajuste</h2>
+          <p>
+            La tecnología no es “por tener máquinas”: es para tomar mejores
+            decisiones y explicártelas con claridad.
+          </p>
+        </div>
+
+        <div class="scrolly-wrap" data-scrolly>
+          <div class="scrolly-sticky reveal">
+            <div class="scrolly-frame" aria-hidden="true">
+              <img src="assets/img-atelier.webp" alt="" width="991" height="555" loading="lazy" decoding="async" />
+              <div class="scrolly-meter" aria-hidden="true">
+                <span></span>
+              </div>
+            </div>
+            <p class="scrolly-caption" data-scrolly-caption>
+              Empezamos por tu rutina: pantallas, conducción, deporte y lo que
+              sientes (fatiga, reflejos, sequedad…).
+            </p>
+          </div>
+
+          <div class="scrolly-steps">
+            <article class="scrolly-step reveal" data-scrolly-step data-image="assets/img-atelier.webp"
+              data-caption="Empezamos por tu rutina: pantallas, conducción, deporte y lo que sientes (fatiga, reflejos, sequedad…).">
+              <p class="scrolly-kicker">Paso 1</p>
+              <h3>Objetivo y hábitos</h3>
+              <p>
+                La mejor medición no sirve si no encaja con tu vida real.
+                Definimos el objetivo antes de medir.
+              </p>
+              <ul>
+                <li>Distancias habituales y tareas críticas</li>
+                <li>Síntomas (si los hay) y desde cuándo</li>
+                <li>Prioridades: nitidez, confort, estética, durabilidad</li>
+              </ul>
+            </article>
+
+            <article class="scrolly-step reveal" data-scrolly-step data-image="assets/img-tech.webp"
+              data-caption="Refracción digital: buscamos consistencia y afinamos la prescripción con criterio.">
+              <p class="scrolly-kicker">Paso 2</p>
+              <h3>Refracción digital (Vision-R 700)</h3>
+              <p>
+                Creamos una base fiable para decidir lentes (y para comparar
+                en futuras revisiones).
+              </p>
+              <ul>
+                <li>Medición consistente y repetible</li>
+                <li>Decisiones con menos “ensayo-error”</li>
+                <li>Base para progresivos y soluciones ocupacionales</li>
+              </ul>
+            </article>
+
+            <article class="scrolly-step reveal" data-scrolly-step data-image="assets/img-eyewear.webp"
+              data-caption="Medición 3D: centrado milimétrico y parámetros faciales para lentes personalizadas.">
+              <p class="scrolly-kicker">Paso 3</p>
+              <h3>Medición 3D (VisiOffice X)</h3>
+              <p>
+                Un buen progresivo depende tanto de la lente como de cómo
+                queda centrada y usada en tu postura real.
+              </p>
+              <ul>
+                <li>Centrado milimétrico</li>
+                <li>Parámetros faciales y postura</li>
+                <li>Personalización avanzada en lentes premium</li>
+              </ul>
+            </article>
+
+            <article class="scrolly-step reveal" data-scrolly-step data-image="assets/img-retina.webp"
+              data-caption="Documentación ocular: fotografías y controles para revisar evolución si procede.">
+              <p class="scrolly-kicker">Paso 4</p>
+              <h3>Documentación ocular</h3>
+              <p>
+                Cuando el caso lo requiere, documentamos para comparar en el
+                tiempo y derivar si detectamos señales de alerta.
+              </p>
+              <ul>
+                <li>Retinografía digital (según el caso)</li>
+                <li>Control de presión ocular (si procede)</li>
+                <li>Explicación visual de resultados</li>
+              </ul>
+            </article>
+
+            <article class="scrolly-step reveal" data-scrolly-step data-image="assets/img-eye.webp"
+              data-caption="Mapa corneal: clave en adaptaciones de lentillas y Orto-K (y en córneas especiales).">
+              <p class="scrolly-kicker">Paso 5</p>
+              <h3>Topografía corneal</h3>
+              <p>
+                Para Orto-K y casos especiales necesitamos un mapa claro de la
+                córnea. Aquí se decide con ciencia, no con suposiciones.
+              </p>
+              <ul>
+                <li>Mapa 3D de curvatura corneal</li>
+                <li>Adaptación de lentillas especiales</li>
+                <li>Apoyo a control de miopía (Orto-K)</li>
+              </ul>
+            </article>
+
+            <article class="scrolly-step reveal" data-scrolly-step data-image="assets/img-eyewear-hero.webp"
+              data-caption="Entrega y ajuste: centrado, ergonomía y recomendaciones para que todo encaje desde el minuto uno.">
+              <p class="scrolly-kicker">Paso 6</p>
+              <h3>Entrega y ajuste fino</h3>
+              <p>
+                El último 10% es el que más se nota. Ajustamos, resolvemos
+                dudas y dejamos una guía de uso real.
+              </p>
+              <ul>
+                <li>Ajuste de montura y estabilidad</li>
+                <li>Consejos de adaptación</li>
+                <li>Seguimiento si el caso lo requiere</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="equipos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Equipamiento</p>
+          <h2>Herramientas que mejoran la precisión</h2>
+          <p>
+            Estas tecnologías nos ayudan a detectar antes, ajustar mejor y
+            documentar el estado ocular.
+          </p>
+        </div>
+
+        <div class="tech-layout">
+          <div class="tech-visual reveal" aria-hidden="true">
+            <img src="assets/img-tech-lab.webp" alt="" width="991" height="555" loading="lazy" decoding="async" />
+          </div>
+          <div class="tech-grid">
+            <details class="tech-card reveal" id="visionr-700">
+              <summary>Foróptero Digital Vision-R 700</summary>
+              <p>
+                Refracción digital con ajuste continuo: buscamos consistencia,
+                afinamos la graduación y dejamos una base clara para
+                revisiones.
+              </p>
+              <ul>
+                <li>Base sólida para progresivos y lentes ocupacionales</li>
+                <li>Menos “ensayo-error” en decisiones clínicas</li>
+                <li>Medición repetible para comparar evolución</li>
+              </ul>
+            </details>
+
+            <details class="tech-card reveal" id="icare">
+              <summary>Tonómetro ICARE</summary>
+              <p>
+                Medición de presión ocular sin soplo de aire, más confortable.
+                Si detectamos valores fuera de rango, te orientamos y
+                derivamos.
+              </p>
+              <ul>
+                <li>Prueba rápida y cómoda</li>
+                <li>Útil en chequeos preventivos (según el caso)</li>
+                <li>Orientación clara y seguimiento si procede</li>
+              </ul>
+            </details>
+
+            <details class="tech-card reveal" id="retinografia">
+              <summary>Retinografía digital</summary>
+              <p>
+                Fotografías del fondo de ojo para documentar y comparar en el
+                tiempo (en muchos casos sin dilatación).
+              </p>
+              <ul>
+                <li>Documentación visual “antes / después”</li>
+                <li>Seguimiento en revisiones</li>
+                <li>Derivación al oftalmólogo si hay signos de alerta</li>
+              </ul>
+            </details>
+
+            <details class="tech-card reveal" id="lampara">
+              <summary>Lámpara de hendidura con fotografía</summary>
+              <p>
+                Examen en detalle de la superficie ocular y estructuras del
+                ojo. Con fotografía si necesitamos documentar.
+              </p>
+              <ul>
+                <li>Valoración de córnea, párpados y conjuntiva</li>
+                <li>Apoyo en ojo seco y contactología</li>
+                <li>Documentación para seguimiento</li>
+              </ul>
+            </details>
+
+            <details class="tech-card reveal" id="topografia">
+              <summary>Topografía corneal</summary>
+              <p>
+                Mapa 3D de la córnea para Orto-K y adaptaciones avanzadas: la
+                base para decidir en casos especiales.
+              </p>
+              <ul>
+                <li>Clave en Ortoqueratología nocturna</li>
+                <li>Apoyo en lentes rígidas y esclerales</li>
+                <li>Ayuda a entender córneas irregulares</li>
+              </ul>
+            </details>
+
+            <details class="tech-card reveal" id="visioffice">
+              <summary>VisiOffice X</summary>
+              <p>
+                Medición 3D para centrado milimétrico y personalización de
+                lentes. En progresivos, marca la diferencia.
+              </p>
+              <ul>
+                <li>Parámetros faciales y postura real</li>
+                <li>Centrado milimétrico en montura</li>
+                <li>Optimización en lentes premium</li>
+              </ul>
+            </details>
+          </div>
+        </div>
+
+        <div class="section-heading reveal" style="margin-top: 40px">
+          <h2>¿Quieres una revisión completa?</h2>
+          <p>Te explicamos cada prueba y qué significa cada resultado.</p>
+          <a class="btn primary" href="cita.html">Reservar cita</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="para-que">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Aplicaciones</p>
+          <h2>¿Qué gana tu visión con todo esto?</h2>
+          <p>
+            No hacemos pruebas “por hacer”. Cada equipo tiene un motivo y un
+            resultado práctico: mejor decisión, mejor ajuste, más
+            tranquilidad.
+          </p>
+        </div>
+
+        <div class="tabs reveal" data-tabs>
+          <div class="tab-list" data-tab-list>
+            <button type="button" class="tab-btn" data-tab="revision">
+              Revisión
+            </button>
+            <button type="button" class="tab-btn" data-tab="progresivos">
+              Progresivos
+            </button>
+            <button type="button" class="tab-btn" data-tab="lentillas">
+              Lentillas
+            </button>
+            <button type="button" class="tab-btn" data-tab="miopia">
+              Miopía
+            </button>
+          </div>
+
+          <div class="tab-panels">
+            <div class="tab-panel" data-tab-panel="revision">
+              <h3>Revisión integral (prevención)</h3>
+              <p>
+                Si buscas tranquilidad o notas cambios, priorizamos datos
+                claros y explicación sin tecnicismos.
+              </p>
+              <ul>
+                <li>Retinografía y documentación (según el caso)</li>
+                <li>Control de presión ocular (si procede)</li>
+                <li>Exploración con lámpara de hendidura</li>
+              </ul>
+              <p>
+                <a class="btn ghost small" href="cita.html">Pedir revisión</a>
+              </p>
+            </div>
+
+            <div class="tab-panel" data-tab-panel="progresivos">
+              <h3>Progresivos premium (y adaptación más fácil)</h3>
+              <p>
+                Para ver bien a todas las distancias, el centrado y la
+                personalización son la diferencia entre “bien” y “wow”.
+              </p>
+              <ul>
+                <li>Medición 3D con VisiOffice X</li>
+                <li>Refracción digital como base consistente</li>
+                <li>
+                  Ajuste fino de montura y recomendaciones de adaptación
+                </li>
+              </ul>
+              <p>
+                <a class="btn ghost small" href="servicios.html#lentes">Ver lentes personalizadas</a>
+              </p>
+            </div>
+
+            <div class="tab-panel" data-tab-panel="lentillas">
+              <h3>Lentillas y casos especiales</h3>
+              <p>
+                En contactología avanzada, la geometría manda. Por eso medimos
+                y revisamos para maximizar confort y seguridad.
+              </p>
+              <ul>
+                <li>Topografía corneal para adaptar con criterio</li>
+                <li>Lámpara de hendidura para evaluación y seguimiento</li>
+                <li>Opciones para ojo seco y adaptaciones especiales</li>
+              </ul>
+              <p>
+                <a class="btn ghost small" href="servicios.html#contactologia">Ver contactología</a>
+              </p>
+            </div>
+
+            <div class="tab-panel" data-tab-panel="miopia">
+              <h3>Control de miopía infantil</h3>
+              <p>
+                El objetivo es medir bien, decidir con calma y revisar con
+                datos. El plan se ajusta según evolución y rutina.
+              </p>
+              <ul>
+                <li>Base consistente con refracción digital</li>
+                <li>Topografía si se valora Orto-K</li>
+                <li>Documentación y seguimiento programado</li>
+              </ul>
+              <p>
+                <a class="btn ghost small" href="control-miopia.html">Ver control de miopía</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-heading reveal" style="margin-top: 40px">
+          <h2>¿Te lo explicamos con calma?</h2>
+          <p>
+            En consulta te contamos qué hacemos, qué significa cada dato y
+            cómo lo usamos para decidir.
+          </p>
+          <a class="btn primary" href="cita.html?service=Salud%20visual">Pedir cita</a>
+        </div>
+
+        <div class="cta-grid reveal">
+          <article class="cta-card">
+            <h3>Paseo de Zorrilla</h3>
+            <p>Paseo de Zorrilla 62 · Valladolid</p>
+            <div class="cta-actions">
+              <a class="btn primary small" href="tel:+34983226200">Llamar ahora</a>
+              <a class="btn ghost small"
+                href="https://wa.me/34601045111?text=Hola%2C%20quiero%20una%20revisi%C3%B3n%20visual%20completa%20en%20Paseo%20de%20Zorrilla.">WhatsApp</a>
+            </div>
+          </article>
+          <article class="cta-card">
+            <h3>Labradores</h3>
+            <p>C/ Labradores 22 · Valladolid</p>
+            <div class="cta-actions">
+              <a class="btn primary small" href="tel:+34983397231">Llamar ahora</a>
+              <a class="btn ghost small"
+                href="https://wa.me/34601045111?text=Hola%2C%20quiero%20una%20revisi%C3%B3n%20visual%20completa%20en%20Labradores.">WhatsApp</a>
+            </div>
+          </article>
+          <article class="cta-card">
+            <h3>Donostiarra</h3>
+            <p>Avda. Donostiarra 24 · Madrid</p>
+            <div class="cta-actions">
+              <a class="btn primary small" href="tel:+34914031795">Llamar ahora</a>
+              <a class="btn ghost small"
+                href="https://wa.me/34601045111?text=Hola%2C%20quiero%20una%20revisi%C3%B3n%20visual%20completa%20en%20Donostiarra%20%28Madrid%29.">WhatsApp</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo.svg" alt="Todo Óptica" width="180" height="39" loading="lazy" />
+        <p>Óptica y audiología con tres centros en Valladolid y Madrid.</p>
+        <div class="footer-social">
+          <a href="https://es-es.facebook.com/TodoOpticaLabradores/" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/todooptica.va/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <p><a href="servicios.html">Servicios</a></p>
+        <p><a href="catalogo.html">Catálogo</a></p>
+        <p><a href="centros.html">Centros</a></p>
+        <p><a href="cita.html">Cita previa</a></p>
+        <p><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></p>
+        <p><a href="blog.html">Blog</a></p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <p><a href="aviso-legal.html">Aviso legal</a></p>
+        <p><a href="privacidad.html">Política de privacidad</a></p>
+        <p><a href="cookies.html">Política de cookies</a></p>
+        <p>TODO ÓPTICA, S.L. · CIF B47245063</p>
+        <p>Domicilio: Paseo de Zorrilla 62, 47006 Valladolid</p>
+        <p>Email legal: todooptica.zo@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Todo Óptica. Todos los derechos reservados.</p>
+      <p><a href="cita.html">Pedir cita</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
